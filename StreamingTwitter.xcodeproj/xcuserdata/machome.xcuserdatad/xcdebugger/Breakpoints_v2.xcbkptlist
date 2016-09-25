@@ -56,7 +56,7 @@
                   moduleName = "StreamingTwitter"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/machome/Dev/StreamingTwitter/StreamingTwitter/Assembly/MainAssembly.swift"
-                  timestampString = "496508384.804149"
+                  timestampString = "496509055.559872"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -71,12 +71,27 @@
                   moduleName = "StreamingTwitter"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/machome/Dev/StreamingTwitter/StreamingTwitter/Assembly/MainAssembly.swift"
-                  timestampString = "496508384.809754"
+                  timestampString = "496509055.561741"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "11"
                   endingLineNumber = "11"
                   offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StreamingTwitter.MainAssembly.__allocating_init () -&gt; StreamingTwitter.MainAssembly"
+                  moduleName = "StreamingTwitter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machome/Dev/StreamingTwitter/StreamingTwitter/Assembly/MainAssembly.swift"
+                  timestampString = "496509055.563435"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
                </Location>
             </Locations>
          </BreakpointContent>
