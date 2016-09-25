@@ -14,10 +14,12 @@ let STComsumerSecret = "PiQkF0lGx3D4mT22QAe9U6AceVPSEGmcBPUyAKOXEosO7pOrsx"
 let STAccessToken = "779999595460001792-6IvC69Eug87J5boWpHLYQfoyaqGutaj"
 let STAccessTokenSecret = "F5JZUnXqqcHDF4X0GXAxWeCGzsPcjIeLu84ZYFG7owlKz"
 
-
 class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
     var swifter : Swifter?
     var tweets : [Tweet]?
+    
+    static let maximumLastTweets : Int = 5
+
     
     let concurrentQueue = DispatchQueue(label: "tweetArrayQueue", attributes: .concurrent)
     
@@ -39,6 +41,12 @@ class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
         
         concurrentQueue.async {
             self.tweets?.append(tweet)
+            
+            if let tweets = self.tweets, tweets.count > TwitterStreamingService.maximumLastTweets
+            {
+                self.tweets?.removeFirst()
+            }
+            
         }
     }
     
@@ -48,7 +56,7 @@ class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
                 self.progressData(result: result)
                 progressHandler()
             }, stallWarningHandler: { (code, message, percentFull) in
-                print("postTweetFilters: stallWarningHandler \(code) \(message)")
+                print("postTweetFilte rs: stallWarningHandler \(code) \(message)")
             }, failure: { (error) in
                 print("postTweetFilters: Failure \(error)")
             }

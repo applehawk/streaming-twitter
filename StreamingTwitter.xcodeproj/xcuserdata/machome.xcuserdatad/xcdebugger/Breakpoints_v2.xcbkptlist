@@ -9,91 +9,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StreamingTwitter/Assembly/MainAssembly.swift"
-            timestampString = "496493348.882729"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "appDelegate()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "StreamingTwitter/Service/ServiceProtocol.swift"
             timestampString = "496496023.199201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1"
             endingLineNumber = "1">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StreamingTwitter/Assembly/MainAssembly.swift"
-            timestampString = "496506844.38699"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "MainAssembly"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "StreamingTwitter.MainAssembly.__deallocating_deinit"
-                  moduleName = "StreamingTwitter"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/machome/Dev/StreamingTwitter/StreamingTwitter/Assembly/MainAssembly.swift"
-                  timestampString = "496509055.559872"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "StreamingTwitter.MainAssembly.init () -&gt; StreamingTwitter.MainAssembly"
-                  moduleName = "StreamingTwitter"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/machome/Dev/StreamingTwitter/StreamingTwitter/Assembly/MainAssembly.swift"
-                  timestampString = "496509055.561741"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "53">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "StreamingTwitter.MainAssembly.__allocating_init () -&gt; StreamingTwitter.MainAssembly"
-                  moduleName = "StreamingTwitter"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/machome/Dev/StreamingTwitter/StreamingTwitter/Assembly/MainAssembly.swift"
-                  timestampString = "496509055.563435"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
