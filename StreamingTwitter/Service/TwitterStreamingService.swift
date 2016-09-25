@@ -39,7 +39,7 @@ class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
             print("Result: \(text)")
         }
         
-        concurrentQueue.async {
+        DispatchQueue.main.async {
             self.tweets?.append(tweet)
             
             if let tweets = self.tweets, tweets.count > TwitterStreamingService.maximumLastTweets
@@ -68,6 +68,7 @@ class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
         completionHandler()
     }
     func obtainData() -> AnyObject? {
+        
         return self.tweets as? AnyObject
     }
 }
