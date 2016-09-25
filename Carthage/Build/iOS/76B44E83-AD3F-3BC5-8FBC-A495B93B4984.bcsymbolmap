@@ -1,0 +1,1588 @@
+BCSymbolMap Version: 2.0
++[TyphoonOptionMatch matchWithValue:injection:]
++[TyphoonOptionMatch matchWithKindOfClass:injection:]
++[TyphoonOptionMatch matchWithMemberOfClass:injection:]
++[TyphoonOptionMatch matchWithConformsToProtocol:injection:]
+-[TyphoonOptionMatch value]
+-[TyphoonOptionMatch setValue:]
+-[TyphoonOptionMatch memberClass]
+-[TyphoonOptionMatch setMemberClass:]
+-[TyphoonOptionMatch kindClass]
+-[TyphoonOptionMatch setKindClass:]
+-[TyphoonOptionMatch conformProtocol]
+-[TyphoonOptionMatch setConformProtocol:]
+-[TyphoonOptionMatch injection]
+-[TyphoonOptionMatch setInjection:]
+-[TyphoonOptionMatch .cxx_destruct]
+-[TyphoonOptionMatcher initWithBlock:]
+-[TyphoonOptionMatcher caseEqual:use:]
+-[TyphoonOptionMatcher caseKindOfClass:use:]
+-[TyphoonOptionMatcher caseMemberOfClass:use:]
+-[TyphoonOptionMatcher caseConformsToProtocol:use:]
+-[TyphoonOptionMatcher useDefinitionWithKeyMatchedOptionValue]
+-[TyphoonOptionMatcher defaultUse:]
+-[TyphoonOptionMatcher injectionMatchedValue:]
+-[TyphoonOptionMatcher matchForValue:]
+-[TyphoonOptionMatcher .cxx_destruct]
+_OBJC_IVAR_$_TyphoonOptionMatch._value
+_OBJC_IVAR_$_TyphoonOptionMatch._memberClass
+_OBJC_IVAR_$_TyphoonOptionMatch._kindClass
+_OBJC_IVAR_$_TyphoonOptionMatch._conformProtocol
+_OBJC_IVAR_$_TyphoonOptionMatch._injection
+_OBJC_IVAR_$_TyphoonOptionMatcher._matches
+_OBJC_IVAR_$_TyphoonOptionMatcher._useMatchingByName
+_OBJC_IVAR_$_TyphoonOptionMatcher._defaultInjection
+Apple LLVM version 8.0.0 (clang-800.0.38)
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Configuration/DefinitionOptionConfiguration/Matcher/TyphoonOptionMatcher.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon
+-[TyphoonOptionDefinition initWithOptionValue:matcher:]
+-[TyphoonOptionDefinition targetForInitializerWithFactory:args:]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___64-[TyphoonOptionDefinition targetForInitializerWithFactory:args:]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+___64-[TyphoonOptionDefinition targetForInitializerWithFactory:args:]_block_invoke.28
+___copy_helper_block_.29
+___destroy_helper_block_.30
+-[TyphoonOptionDefinition initializer]
+-[TyphoonOptionDefinition enumerateInjectionsOfKind:options:usingBlock:]
+-[TyphoonOptionDefinition optionInjection]
+-[TyphoonOptionDefinition setOptionInjection:]
+-[TyphoonOptionDefinition matcher]
+-[TyphoonOptionDefinition setMatcher:]
+-[TyphoonOptionDefinition .cxx_destruct]
++[TyphoonDefinition(Option) withOption:yes:no:]
+___47+[TyphoonDefinition(Option) withOption:yes:no:]_block_invoke
+___copy_helper_block_.114
+___destroy_helper_block_.115
++[TyphoonDefinition(Option) withOption:matcher:]
++[TyphoonDefinition(Option) withOption:matcher:autoInjectionConfig:]
+___block_descriptor_tmp
+___block_descriptor_tmp.31
+_OBJC_IVAR_$_TyphoonOptionDefinition._optionInjection
+_OBJC_IVAR_$_TyphoonOptionDefinition._matcher
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_TyphoonAutoInjectionConfig
+l_OBJC_LABEL_PROTOCOL_$_TyphoonAutoInjectionConfig
+___block_descriptor_tmp.117
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Configuration/DefinitionOptionConfiguration/TyphoonDefinition+Option.m
+__destroy_helper_block_
+__copy_helper_block_
+__47+[TyphoonDefinition(Option) withOption:yes:no:]_block_invoke
+__64-[TyphoonOptionDefinition targetForInitializerWithFactory:args:]_block_invoke.28
+__64-[TyphoonOptionDefinition targetForInitializerWithFactory:args:]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
++[TyphoonConfigPostProcessor processor]
++[TyphoonConfigPostProcessor forResourceNamed:]
++[TyphoonConfigPostProcessor forResourceNamed:inBundle:]
++[TyphoonConfigPostProcessor forResourceAtPath:]
++[TyphoonConfigPostProcessor registerConfigurationClass:forExtension:]
++[TyphoonConfigPostProcessor availableExtensions]
+-[TyphoonConfigPostProcessor init]
+___34-[TyphoonConfigPostProcessor init]_block_invoke
++[TyphoonConfigPostProcessor initialize]
+-[TyphoonConfigPostProcessor registerNamespace:]
+-[TyphoonConfigPostProcessor useResourceWithName:]
+-[TyphoonConfigPostProcessor useResourceWithName:bundle:]
+-[TyphoonConfigPostProcessor useResourceAtPath:]
+-[TyphoonConfigPostProcessor useResource:withExtension:]
+-[TyphoonConfigPostProcessor configurationValueForKey:]
+___55-[TyphoonConfigPostProcessor configurationValueForKey:]_block_invoke
+___copy_helper_block_.59
+___destroy_helper_block_.60
+-[TyphoonConfigPostProcessor postProcessDefinition:replacement:withFactory:]
+-[TyphoonConfigPostProcessor shouldInjectDefinition:]
+-[TyphoonConfigPostProcessor configureInjectionsInDefinition:]
+___62-[TyphoonConfigPostProcessor configureInjectionsInDefinition:]_block_invoke
+___copy_helper_block_.80
+___destroy_helper_block_.81
+-[TyphoonConfigPostProcessor configureInjectionsInRuntimeArgumentsInDefinition:]
+___80-[TyphoonConfigPostProcessor configureInjectionsInRuntimeArgumentsInDefinition:]_block_invoke
+___80-[TyphoonConfigPostProcessor configureInjectionsInRuntimeArgumentsInDefinition:]_block_invoke_2
+___copy_helper_block_.91
+___destroy_helper_block_.92
+___copy_helper_block_.97
+___destroy_helper_block_.98
+-[TyphoonConfigPostProcessor injectionForConfigInjection:]
+-[TyphoonConfigPostProcessor .cxx_destruct]
+_propertyPlaceholderRegistry
+_OBJC_IVAR_$_TyphoonConfigPostProcessor._configs
+_OBJC_IVAR_$_TyphoonConfigPostProcessor._space
+___block_descriptor_tmp.62
+___block_descriptor_tmp.83
+___block_descriptor_tmp.94
+___block_descriptor_tmp.100
+l_OBJC_PROTOCOL_$_TyphoonDefinitionPostProcessor
+l_OBJC_LABEL_PROTOCOL_$_TyphoonDefinitionPostProcessor
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Configuration/ConfigPostProcessor/TyphoonConfigPostProcessor.m
+TyphoonConfig
+__80-[TyphoonConfigPostProcessor configureInjectionsInRuntimeArgumentsInDefinition:]_block_invoke_2
+__80-[TyphoonConfigPostProcessor configureInjectionsInRuntimeArgumentsInDefinition:]_block_invoke
+__62-[TyphoonConfigPostProcessor configureInjectionsInDefinition:]_block_invoke
+__55-[TyphoonConfigPostProcessor configurationValueForKey:]_block_invoke
+__34-[TyphoonConfigPostProcessor init]_block_invoke
+-[TyphoonPreattachedComponentsRegisterer initWithComponentFactory:]
+-[TyphoonPreattachedComponentsRegisterer doRegistrationForAssembly:]
+-[TyphoonPreattachedComponentsRegisterer factory]
+-[TyphoonPreattachedComponentsRegisterer setFactory:]
+-[TyphoonPreattachedComponentsRegisterer .cxx_destruct]
+_OBJC_IVAR_$_TyphoonPreattachedComponentsRegisterer._factory
+l_OBJC_PROTOCOL_REFERENCE_$_TyphoonDefinitionPostProcessor
+l_OBJC_PROTOCOL_$_TyphoonInstancePostProcessor
+l_OBJC_LABEL_PROTOCOL_$_TyphoonInstancePostProcessor
+l_OBJC_PROTOCOL_REFERENCE_$_TyphoonInstancePostProcessor
+l_OBJC_PROTOCOL_$_TyphoonTypeConverter
+l_OBJC_LABEL_PROTOCOL_$_TyphoonTypeConverter
+l_OBJC_PROTOCOL_REFERENCE_$_TyphoonTypeConverter
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/TyphoonPreattachedComponentsRegisterer.m
+-[TyphoonJsonStyleConfiguration init]
+-[TyphoonJsonStyleConfiguration stringWithoutCommentsFromString:]
+___65-[TyphoonJsonStyleConfiguration stringWithoutCommentsFromString:]_block_invoke
+___65-[TyphoonJsonStyleConfiguration stringWithoutCommentsFromString:]_block_invoke_2
+-[TyphoonJsonStyleConfiguration appendResource:]
+-[TyphoonJsonStyleConfiguration objectForKey:]
+-[TyphoonJsonStyleConfiguration .cxx_destruct]
+_OBJC_IVAR_$_TyphoonJsonStyleConfiguration._properties
+_stringWithoutCommentsFromString:.expression
+_stringWithoutCommentsFromString:.once
+___block_literal_global
+___block_descriptor_tmp.24
+l_OBJC_PROTOCOL_$_TyphoonConfiguration
+l_OBJC_LABEL_PROTOCOL_$_TyphoonConfiguration
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Configuration/ConfigPostProcessor/TyphoonConfiguration/TyphoonJsonStyleConfiguration.m
+__65-[TyphoonJsonStyleConfiguration stringWithoutCommentsFromString:]_block_invoke_2
+__65-[TyphoonJsonStyleConfiguration stringWithoutCommentsFromString:]_block_invoke
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+_dispatch_once
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/usr/include/dispatch/once.h
++[TyphoonMemoryManagementUtils makeFactory:retainAssemblies:]
++[TyphoonMemoryManagementUtils makeAssemblies:retainFactory:]
+_kFactoryAssembliesKey
+_kAssemblyFactoryKey
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonMemoryManagementUtils.m
+-[TyphoonPlistStyleConfiguration init]
+-[TyphoonPlistStyleConfiguration appendResource:]
+-[TyphoonPlistStyleConfiguration objectForKey:]
+-[TyphoonPlistStyleConfiguration .cxx_destruct]
+_OBJC_IVAR_$_TyphoonPlistStyleConfiguration._properties
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Configuration/ConfigPostProcessor/TyphoonConfiguration/TyphoonPlistStyleConfiguration.m
+-[TyphoonPropertyStyleConfiguration init]
+-[TyphoonPropertyStyleConfiguration appendResource:]
+-[TyphoonPropertyStyleConfiguration objectForKey:]
+-[TyphoonPropertyStyleConfiguration .cxx_destruct]
+_OBJC_IVAR_$_TyphoonPropertyStyleConfiguration._properties
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Configuration/ConfigPostProcessor/TyphoonConfiguration/TyphoonPropertyStyleConfiguration.m
++[TyphoonBundleResource withName:]
++[TyphoonBundleResource withName:inBundle:]
++[TyphoonBundleResource filePathForName:inBundle:]
+l_OBJC_PROTOCOL_$_TyphoonResource
+l_OBJC_LABEL_PROTOCOL_$_TyphoonResource
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Configuration/Resource/TyphoonBundleResource.m
++[TyphoonDefinition(Config) withConfigName:]
+___44+[TyphoonDefinition(Config) withConfigName:]_block_invoke
+___44+[TyphoonDefinition(Config) withConfigName:]_block_invoke_2
+___copy_helper_block_.13
+___destroy_helper_block_.14
++[TyphoonDefinition(Config) withConfigName:bundle:]
+___51+[TyphoonDefinition(Config) withConfigName:bundle:]_block_invoke
+___51+[TyphoonDefinition(Config) withConfigName:bundle:]_block_invoke_2
+___copy_helper_block_.21
+___destroy_helper_block_.22
+___copy_helper_block_.24
+___destroy_helper_block_.25
++[TyphoonDefinition(Config) withConfigPath:]
+___44+[TyphoonDefinition(Config) withConfigPath:]_block_invoke
+___44+[TyphoonDefinition(Config) withConfigPath:]_block_invoke_2
+___copy_helper_block_.34
+___destroy_helper_block_.35
++[TyphoonDefinition(Config) configDefinitionWithName:]
++[TyphoonDefinition(Config) configDefinitionWithName:bundle:]
++[TyphoonDefinition(Config) configDefinitionWithPath:]
+___block_descriptor_tmp.16
+___block_descriptor_tmp.23
+___block_descriptor_tmp.26
+___block_descriptor_tmp.36
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Configuration/ConfigPostProcessor/TyphoonDefinition+Config.m
+__44+[TyphoonDefinition(Config) withConfigPath:]_block_invoke_2
+__44+[TyphoonDefinition(Config) withConfigPath:]_block_invoke
+__51+[TyphoonDefinition(Config) withConfigName:bundle:]_block_invoke_2
+__51+[TyphoonDefinition(Config) withConfigName:bundle:]_block_invoke
+__44+[TyphoonDefinition(Config) withConfigName:]_block_invoke_2
+__44+[TyphoonDefinition(Config) withConfigName:]_block_invoke
++[TyphoonPathResource withPath:]
+-[TyphoonPathResource initWithContentsOfFile:]
+-[TyphoonPathResource asString]
+-[TyphoonPathResource asStringWithEncoding:]
+-[TyphoonPathResource data]
+-[TyphoonPathResource url]
+-[TyphoonPathResource description]
+-[TyphoonPathResource .cxx_destruct]
+_OBJC_IVAR_$_TyphoonPathResource._path
+_OBJC_IVAR_$_TyphoonPathResource._data
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Configuration/Resource/TyphoonPathResource.m
+-[TyphoonComponentFactory(DetachableComponentFactoryPostProcessor) setRegistry:]
+-[TyphoonAbstractDetachableComponentFactoryPostProcessor init]
+-[TyphoonAbstractDetachableComponentFactoryPostProcessor postProcessDefinition:replacement:withFactory:]
+-[TyphoonAbstractDetachableComponentFactoryPostProcessor rollback]
+-[TyphoonAbstractDetachableComponentFactoryPostProcessor cacheDefinition:]
+-[TyphoonAbstractDetachableComponentFactoryPostProcessor .cxx_destruct]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Configuration/TyphoonAbstractDetachableComponentFactoryPostProcessor.m
+-[TyphoonInjectionDefinition initWithInjection:]
+-[TyphoonInjectionDefinition initializer]
+-[TyphoonInjectionDefinition targetForInitializerWithFactory:args:]
+___67-[TyphoonInjectionDefinition targetForInitializerWithFactory:args:]_block_invoke
+-[TyphoonInjectionDefinition isCandidateForInjectedClass:includeSubclasses:]
+-[TyphoonInjectionDefinition isCandidateForInjectedProtocol:]
+-[TyphoonInjectionDefinition copyWithZone:]
+-[TyphoonInjectionDefinition .cxx_destruct]
+_OBJC_IVAR_$_TyphoonInjectionDefinition._injection
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Internal/TyphoonInjectionDefinition.m
+__67-[TyphoonInjectionDefinition targetForInitializerWithFactory:args:]_block_invoke
++[TyphoonStartup load]
++[TyphoonStartup factoryFromAppDelegate:]
++[TyphoonStartup requireInitialFactory]
++[TyphoonStartup initialFactory]
++[TyphoonStartup swizzleSetDelegateMethodOnApplicationClass]
+___60+[TyphoonStartup swizzleSetDelegateMethodOnApplicationClass]_block_invoke
++[TyphoonStartup releaseInitialFactoryWhenApplicationDidFinishLaunching]
+___72+[TyphoonStartup releaseInitialFactoryWhenApplicationDidFinishLaunching]_block_invoke
+___copy_helper_block_.65
+___destroy_helper_block_.66
++[TyphoonStartup releaseInitialFactory]
++[TyphoonStartup injectInitialFactoryIntoDelegate:]
+_initialFactoryRequestCount
+_initialFactoryWasCreated
+_initialFactory
+___block_descriptor_tmp.68
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Configuration/Startup/TyphoonStartup.m
+__72+[TyphoonStartup releaseInitialFactoryWhenApplicationDidFinishLaunching]_block_invoke
+__60+[TyphoonStartup swizzleSetDelegateMethodOnApplicationClass]_block_invoke
+-[TyphoonAbstractInjection customDescription]
+-[TyphoonAbstractInjection description]
+-[TyphoonAbstractInjection setParameterIndex:]
+-[TyphoonAbstractInjection setPropertyName:]
+-[TyphoonAbstractInjection hash]
+-[TyphoonAbstractInjection customHash]
+-[TyphoonAbstractInjection isEqual:]
+-[TyphoonAbstractInjection isEqualToBase:]
+-[TyphoonAbstractInjection isEqualToCustom:]
+-[TyphoonAbstractInjection copyWithZone:]
+-[TyphoonAbstractInjection valueToInjectWithContext:completion:]
+-[TyphoonAbstractInjection type]
+-[TyphoonAbstractInjection propertyName]
+-[TyphoonAbstractInjection parameterIndex]
+-[TyphoonAbstractInjection .cxx_destruct]
+-[TyphoonAbstractInjection(Protected) copyBasePropertiesTo:]
+_OBJC_IVAR_$_TyphoonAbstractInjection._parameterIndex
+_OBJC_IVAR_$_TyphoonAbstractInjection._type
+_OBJC_IVAR_$_TyphoonAbstractInjection._propertyName
+l_OBJC_PROTOCOL_$_NSCopying
+l_OBJC_LABEL_PROTOCOL_$_NSCopying
+l_OBJC_PROTOCOL_$_TyphoonInjection
+l_OBJC_LABEL_PROTOCOL_$_TyphoonInjection
+l_OBJC_PROTOCOL_$_TyphoonParameterInjection
+l_OBJC_LABEL_PROTOCOL_$_TyphoonParameterInjection
+l_OBJC_PROTOCOL_$_TyphoonPropertyInjection
+l_OBJC_LABEL_PROTOCOL_$_TyphoonPropertyInjection
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonAbstractInjection.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonAbstractInjection.h
++[TyphoonInjectionByCollection isCollectionClass:]
++[TyphoonInjectionByCollection collectionMutableClassFromClass:]
+-[TyphoonInjectionByCollection initWithCollection:requiredClass:]
+-[TyphoonInjectionByCollection initWithCollection:]
+-[TyphoonInjectionByCollection count]
+-[TyphoonInjectionByCollection buildCollectionWithClass:context:completion:]
+___76-[TyphoonInjectionByCollection buildCollectionWithClass:context:completion:]_block_invoke
+___76-[TyphoonInjectionByCollection buildCollectionWithClass:context:completion:]_block_invoke_2
+___copy_helper_block_.47
+___destroy_helper_block_.48
+___76-[TyphoonInjectionByCollection buildCollectionWithClass:context:completion:]_block_invoke.51
+___copy_helper_block_.52
+___destroy_helper_block_.53
+-[TyphoonInjectionByCollection collectionClassForContext:]
+-[TyphoonInjectionByCollection copyWithZone:]
+-[TyphoonInjectionByCollection isEqualToCustom:]
+-[TyphoonInjectionByCollection valueToInjectWithContext:completion:]
+___68-[TyphoonInjectionByCollection valueToInjectWithContext:completion:]_block_invoke
+___copy_helper_block_.78
+___destroy_helper_block_.79
+-[TyphoonInjectionByCollection customHash]
+-[TyphoonInjectionByCollection injections]
+-[TyphoonInjectionByCollection setInjections:]
+-[TyphoonInjectionByCollection requiredClass]
+-[TyphoonInjectionByCollection setRequiredClass:]
+-[TyphoonInjectionByCollection .cxx_destruct]
+l_OBJC_PROTOCOL_$_NSFastEnumeration
+l_OBJC_LABEL_PROTOCOL_$_NSFastEnumeration
+l_OBJC_PROTOCOL_REFERENCE_$_NSFastEnumeration
+___block_descriptor_tmp.50
+___block_descriptor_tmp.55
+___block_descriptor_tmp.81
+_OBJC_IVAR_$_TyphoonInjectionByCollection._requiredClass
+_OBJC_IVAR_$_TyphoonInjectionByCollection._injections
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByCollection.m
+__68-[TyphoonInjectionByCollection valueToInjectWithContext:completion:]_block_invoke
+__76-[TyphoonInjectionByCollection buildCollectionWithClass:context:completion:]_block_invoke.51
+__76-[TyphoonInjectionByCollection buildCollectionWithClass:context:completion:]_block_invoke_2
+__76-[TyphoonInjectionByCollection buildCollectionWithClass:context:completion:]_block_invoke
+-[NSInvocation(TCFWrapValues) typhoon_getArgumentObjectAtIndex:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/NSInvocation+TCFWrapValues.m
+-[TyphoonInjectionByComponentFactory valueToInjectWithContext:completion:]
+-[TyphoonInjectionByComponentFactory copyWithZone:]
+-[TyphoonInjectionByComponentFactory isEqualToCustom:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByComponentFactory.m
+-[TyphoonInjectionByConfig initWithConfigKey:]
+-[TyphoonInjectionByConfig setConfiguredInjection:]
+-[TyphoonInjectionByConfig copyWithZone:]
+-[TyphoonInjectionByConfig isEqualToCustom:]
+-[TyphoonInjectionByConfig valueToInjectWithContext:completion:]
+-[TyphoonInjectionByConfig customHash]
+-[TyphoonInjectionByConfig configuredInjection]
+-[TyphoonInjectionByConfig configKey]
+-[TyphoonInjectionByConfig .cxx_destruct]
+_OBJC_IVAR_$_TyphoonInjectionByConfig._configKey
+_OBJC_IVAR_$_TyphoonInjectionByConfig._configuredInjection
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByConfig.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByConfig.h
++[TyphoonInjectionByDictionary isDictionaryClass:]
++[TyphoonInjectionByDictionary dictionaryMutableClassFromClass:]
+-[TyphoonInjectionByDictionary initWithDictionary:requiredClass:]
+-[TyphoonInjectionByDictionary initWithDictionary:]
+___51-[TyphoonInjectionByDictionary initWithDictionary:]_block_invoke
+-[TyphoonInjectionByDictionary count]
+-[TyphoonInjectionByDictionary buildDictionaryWithClass:context:completion:]
+___76-[TyphoonInjectionByDictionary buildDictionaryWithClass:context:completion:]_block_invoke
+___76-[TyphoonInjectionByDictionary buildDictionaryWithClass:context:completion:]_block_invoke_2
+___copy_helper_block_.43
+___destroy_helper_block_.44
+___copy_helper_block_.49
+___destroy_helper_block_.50
+___76-[TyphoonInjectionByDictionary buildDictionaryWithClass:context:completion:]_block_invoke.53
+___copy_helper_block_.54
+___destroy_helper_block_.55
+-[TyphoonInjectionByDictionary dictionaryClassForContext:]
+-[TyphoonInjectionByDictionary copyWithZone:]
+-[TyphoonInjectionByDictionary isEqualToCustom:]
+-[TyphoonInjectionByDictionary valueToInjectWithContext:completion:]
+___68-[TyphoonInjectionByDictionary valueToInjectWithContext:completion:]_block_invoke
+___copy_helper_block_.82
+___destroy_helper_block_.83
+-[TyphoonInjectionByDictionary customHash]
+-[TyphoonInjectionByDictionary injections]
+-[TyphoonInjectionByDictionary setInjections:]
+-[TyphoonInjectionByDictionary requiredClass]
+-[TyphoonInjectionByDictionary setRequiredClass:]
+-[TyphoonInjectionByDictionary .cxx_destruct]
+___block_descriptor_tmp.46
+___block_descriptor_tmp.52
+___block_descriptor_tmp.57
+___block_descriptor_tmp.85
+_OBJC_IVAR_$_TyphoonInjectionByDictionary._requiredClass
+_OBJC_IVAR_$_TyphoonInjectionByDictionary._injections
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByDictionary.m
+__68-[TyphoonInjectionByDictionary valueToInjectWithContext:completion:]_block_invoke
+__76-[TyphoonInjectionByDictionary buildDictionaryWithClass:context:completion:]_block_invoke.53
+__76-[TyphoonInjectionByDictionary buildDictionaryWithClass:context:completion:]_block_invoke_2
+__76-[TyphoonInjectionByDictionary buildDictionaryWithClass:context:completion:]_block_invoke
+__51-[TyphoonInjectionByDictionary initWithDictionary:]_block_invoke
+-[TyphoonInjectionByFactoryReference initWithReference:args:keyPath:]
+-[TyphoonInjectionByFactoryReference copyWithZone:]
+-[TyphoonInjectionByFactoryReference isEqualToCustom:]
+-[TyphoonInjectionByFactoryReference resolveReferenceWithContext:]
+-[TyphoonInjectionByFactoryReference customHash]
+-[TyphoonInjectionByFactoryReference keyPath]
+-[TyphoonInjectionByFactoryReference .cxx_destruct]
+_OBJC_IVAR_$_TyphoonInjectionByFactoryReference._keyPath
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByFactoryReference.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByFactoryReference.h
+-[TyphoonInjectionByObjectFromString initWithString:]
+-[TyphoonInjectionByObjectFromString copyWithZone:]
+-[TyphoonInjectionByObjectFromString isEqualToCustom:]
+-[TyphoonInjectionByObjectFromString valueToInjectWithContext:completion:]
+-[TyphoonInjectionByObjectFromString convertText:toType:withTypeConverterRegistry:]
+-[TyphoonInjectionByObjectFromString customHash]
+-[TyphoonInjectionByObjectFromString textValue]
+-[TyphoonInjectionByObjectFromString setTextValue:]
+-[TyphoonInjectionByObjectFromString .cxx_destruct]
+_OBJC_IVAR_$_TyphoonInjectionByObjectFromString._textValue
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByObjectFromString.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByObjectFromString.h
+-[TyphoonInjectionByObjectInstance initWithObjectInstance:]
+-[TyphoonInjectionByObjectInstance copyWithZone:]
+-[TyphoonInjectionByObjectInstance isEqualToCustom:]
+-[TyphoonInjectionByObjectInstance valueToInjectWithContext:completion:]
+-[TyphoonInjectionByObjectInstance customHash]
+-[TyphoonInjectionByObjectInstance customDescription]
+-[TyphoonInjectionByObjectInstance objectInstance]
+-[TyphoonInjectionByObjectInstance .cxx_destruct]
+_OBJC_IVAR_$_TyphoonInjectionByObjectInstance._objectInstance
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByObjectInstance.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByObjectInstance.h
+-[TyphoonInjectionByReference initWithReference:args:]
+-[TyphoonInjectionByReference copyWithZone:]
+-[TyphoonInjectionByReference isEqualToCustom:]
+-[TyphoonInjectionByReference valueToInjectWithContext:completion:]
+___67-[TyphoonInjectionByReference valueToInjectWithContext:completion:]_block_invoke
+-[TyphoonInjectionByReference resolveCircularDependencyWithContext:block:]
+___74-[TyphoonInjectionByReference resolveCircularDependencyWithContext:block:]_block_invoke
+___copy_helper_block_.26
+___destroy_helper_block_.27
+-[TyphoonInjectionByReference resolveReferenceWithContext:]
+-[TyphoonInjectionByReference customHash]
+-[TyphoonInjectionByReference reference]
+-[TyphoonInjectionByReference referenceArguments]
+-[TyphoonInjectionByReference .cxx_destruct]
+_OBJC_IVAR_$_TyphoonInjectionByReference._reference
+_OBJC_IVAR_$_TyphoonInjectionByReference._referenceArguments
+___block_descriptor_tmp.29
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByReference.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByReference.h
+__74-[TyphoonInjectionByReference resolveCircularDependencyWithContext:block:]_block_invoke
+__67-[TyphoonInjectionByReference valueToInjectWithContext:completion:]_block_invoke
+-[TyphoonInjectionByRuntimeArgument customDescription]
+-[TyphoonInjectionByRuntimeArgument initWithArgumentIndex:]
+-[TyphoonInjectionByRuntimeArgument forwardingTargetForSelector:]
+-[TyphoonInjectionByRuntimeArgument valueToInjectWithContext:completion:]
+-[TyphoonInjectionByRuntimeArgument copyWithZone:]
+-[TyphoonInjectionByRuntimeArgument isEqualToCustom:]
+-[TyphoonInjectionByRuntimeArgument customHash]
+-[TyphoonInjectionByRuntimeArgument runtimeArgumentIndex]
+_OBJC_IVAR_$_TyphoonInjectionByRuntimeArgument._runtimeArgumentIndex
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByRuntimeArgument.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByRuntimeArgument.h
+-[TyphoonInjectionByType copyWithZone:]
+-[TyphoonInjectionByType isEqualToCustom:]
+-[TyphoonInjectionByType valueToInjectWithContext:completion:]
+___62-[TyphoonInjectionByType valueToInjectWithContext:completion:]_block_invoke
+-[TyphoonInjectionByType customHash]
+-[TyphoonInjectionByType explicitClassOrProtocol]
+-[TyphoonInjectionByType setExplicitClassOrProtocol:]
+-[TyphoonInjectionByType .cxx_destruct]
+_OBJC_IVAR_$_TyphoonInjectionByType._explicitClassOrProtocol
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByType.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByType.h
+__62-[TyphoonInjectionByType valueToInjectWithContext:completion:]_block_invoke
+-[TyphoonInjectionContext initWithFactory:args:raiseExceptionIfCircular:]
+-[TyphoonInjectionContext copyWithZone:]
+-[TyphoonInjectionContext factory]
+-[TyphoonInjectionContext setFactory:]
+-[TyphoonInjectionContext args]
+-[TyphoonInjectionContext setArgs:]
+-[TyphoonInjectionContext raiseExceptionIfCircular]
+-[TyphoonInjectionContext setRaiseExceptionIfCircular:]
+-[TyphoonInjectionContext classUnderConstruction]
+-[TyphoonInjectionContext setClassUnderConstruction:]
+-[TyphoonInjectionContext destinationType]
+-[TyphoonInjectionContext setDestinationType:]
+-[TyphoonInjectionContext .cxx_destruct]
+_OBJC_IVAR_$_TyphoonInjectionContext._factory
+_OBJC_IVAR_$_TyphoonInjectionContext._args
+_OBJC_IVAR_$_TyphoonInjectionContext._raiseExceptionIfCircular
+_OBJC_IVAR_$_TyphoonInjectionContext._classUnderConstruction
+_OBJC_IVAR_$_TyphoonInjectionContext._destinationType
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionContext.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionContext.h
+-[TyphoonInjectionByCurrentRuntimeArguments valueToInjectWithContext:completion:]
+-[TyphoonInjectionByCurrentRuntimeArguments copyWithZone:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjectionByCurrentRuntimeArguments.m
+___TyphoonInjectionWithRuntimeArgumentAtIndexWrappedIntoBlock_block_invoke
+_typhoonRuntimeArgumentBlockWrapperKey
+l_OBJC_PROTOCOL_$_TyphoonObjectWithCustomInjection
+l_OBJC_LABEL_PROTOCOL_$_TyphoonObjectWithCustomInjection
+l_OBJC_PROTOCOL_REFERENCE_$_TyphoonObjectWithCustomInjection
+l_OBJC_PROTOCOL_REFERENCE_$_TyphoonPropertyInjection
+l_OBJC_PROTOCOL_REFERENCE_$_TyphoonParameterInjection
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInjections.m
+IsWrappedIntoTyphoonBlock
+IsTyphoonInjection
+HasCustomInjection
+TyphoonMakeInjectionFromObjectIfNeeded
+TyphoonInjectionWithCurrentRuntimeArguments
+TyphoonInjectionWithConfigKey
+TyphoonInjectionWithReference
+TyphoonInjectionWithObject
+__TyphoonInjectionWithRuntimeArgumentAtIndexWrappedIntoBlock_block_invoke
+TyphoonInjectionWithRuntimeArgumentAtIndexWrappedIntoBlock
+TyphoonInjectionWithRuntimeArgumentAtIndex
+TyphoonInjectionWithDictionaryAndType
+TyphoonInjectionWithCollectionAndType
+TyphoonInjectionWithObjectFromString
+TyphoonInjectionWithType
+TyphoonInjectionMatchedByType
+-[NSArray(TyphoonObjectWithCustomInjection) typhoonCustomObjectInjection]
+_InjectionForCollection
+-[NSSet(TyphoonObjectWithCustomInjection) typhoonCustomObjectInjection]
+-[NSOrderedSet(TyphoonObjectWithCustomInjection) typhoonCustomObjectInjection]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Internal/Collections+CustomInjection.m
+InjectionForCollection
+IsContainsTyphoonObjectInCollection
+-[TyphoonBlockDefinition(InstanceBuilder) initializeInstanceWithArgs:factory:]
+___78-[TyphoonBlockDefinition(InstanceBuilder) initializeInstanceWithArgs:factory:]_block_invoke
+-[TyphoonBlockDefinition(InstanceBuilder) doInjectionEventsOn:withArgs:factory:]
+___80-[TyphoonBlockDefinition(InstanceBuilder) doInjectionEventsOn:withArgs:factory:]_block_invoke
+___copy_helper_block_.20
+___destroy_helper_block_.21
+-[TyphoonBlockDefinition(InstanceBuilder) invokeAssemblySelector]
+___65-[TyphoonBlockDefinition(InstanceBuilder) invokeAssemblySelector]_block_invoke
+___65-[TyphoonBlockDefinition(InstanceBuilder) invokeAssemblySelector]_block_invoke_2
+___copy_helper_block_.58
+___destroy_helper_block_.59
+___block_descriptor_tmp.22
+___block_descriptor_tmp.61
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Internal/TyphoonBlockDefinition+InstanceBuilder.m
+__65-[TyphoonBlockDefinition(InstanceBuilder) invokeAssemblySelector]_block_invoke_2
+__65-[TyphoonBlockDefinition(InstanceBuilder) invokeAssemblySelector]_block_invoke
+__80-[TyphoonBlockDefinition(InstanceBuilder) doInjectionEventsOn:withArgs:factory:]_block_invoke
+__78-[TyphoonBlockDefinition(InstanceBuilder) initializeInstanceWithArgs:factory:]_block_invoke
+-[NSDictionary(TyphoonObjectWithCustomInjection) typhoonCustomObjectInjection]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Internal/NSDictionary+CustomInjection.m
+-[TyphoonDefinition(InstanceBuilder) initializeInstanceWithArgs:factory:]
+___73-[TyphoonDefinition(InstanceBuilder) initializeInstanceWithArgs:factory:]_block_invoke
+-[TyphoonDefinition(InstanceBuilder) doInjectionEventsOn:withArgs:factory:]
+-[TyphoonDefinition(InstanceBuilder) doAfterAllInjectionsOn:]
+-[TyphoonDefinition(InstanceBuilder) targetForInitializerWithFactory:args:]
+-[TyphoonDefinition(InstanceBuilder) doMethodInjection:onInstance:args:factory:]
+___80-[TyphoonDefinition(InstanceBuilder) doMethodInjection:onInstance:args:factory:]_block_invoke
+___copy_helper_block_.45
+___destroy_helper_block_.46
+-[TyphoonDefinition(InstanceBuilder) doPropertyInjectionOn:property:args:factory:]
+___82-[TyphoonDefinition(InstanceBuilder) doPropertyInjectionOn:property:args:factory:]_block_invoke
+___copy_helper_block_.56
+___destroy_helper_block_.57
+___block_descriptor_tmp.47
+___block_descriptor_tmp.59
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Internal/TyphoonDefinition+InstanceBuilder.m
+__82-[TyphoonDefinition(InstanceBuilder) doPropertyInjectionOn:property:args:factory:]_block_invoke
+__80-[TyphoonDefinition(InstanceBuilder) doMethodInjection:onInstance:args:factory:]_block_invoke
+__73-[TyphoonDefinition(InstanceBuilder) initializeInstanceWithArgs:factory:]_block_invoke
++[TyphoonReferenceDefinition definitionReferringToComponent:]
++[TyphoonShortcutDefinition definitionWithKey:referringTo:]
+-[TyphoonShortcutDefinition targetForInitializerWithFactory:args:]
+-[TyphoonShortcutDefinition initializer]
+-[TyphoonShortcutDefinition copyWithZone:]
+-[TyphoonShortcutDefinition .cxx_destruct]
+_OBJC_IVAR_$_TyphoonShortcutDefinition._referringArgs
+_OBJC_IVAR_$_TyphoonShortcutDefinition._referringKey
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Internal/TyphoonReferenceDefinition.m
+-[TyphoonFactoryDefinition initWithFactory:selector:parameters:]
+-[TyphoonFactoryDefinition targetForInitializerWithFactory:args:]
+___65-[TyphoonFactoryDefinition targetForInitializerWithFactory:args:]_block_invoke
+-[TyphoonFactoryDefinition useInitializer:parameters:]
+-[TyphoonFactoryDefinition useInitializer:]
+-[TyphoonFactoryDefinition isCandidateForInjectedClass:includeSubclasses:]
+-[TyphoonFactoryDefinition isCandidateForInjectedProtocol:]
+-[TyphoonFactoryDefinition copyWithZone:]
+-[TyphoonFactoryDefinition classOrProtocolForAutoInjection]
+-[TyphoonFactoryDefinition setClassOrProtocolForAutoInjection:]
+-[TyphoonFactoryDefinition .cxx_destruct]
+_OBJC_IVAR_$_TyphoonFactoryDefinition._factoryInjection
+_OBJC_IVAR_$_TyphoonFactoryDefinition._classOrProtocolForAutoInjection
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Internal/TyphoonFactoryDefinition.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Internal/TyphoonFactoryDefinition.h
+__65-[TyphoonFactoryDefinition targetForInitializerWithFactory:args:]_block_invoke
+-[TyphoonMethod(InstanceBuilder) replaceInjection:with:]
+-[TyphoonMethod(InstanceBuilder) injectedParameters]
+-[TyphoonMethod(InstanceBuilder) createInvocationWithContext:completion:]
+___73-[TyphoonMethod(InstanceBuilder) createInvocationWithContext:completion:]_block_invoke
+___73-[TyphoonMethod(InstanceBuilder) createInvocationWithContext:completion:]_block_invoke_2
+___copy_helper_block_.36
+___destroy_helper_block_.37
+___73-[TyphoonMethod(InstanceBuilder) createInvocationWithContext:completion:]_block_invoke.40
+___copy_helper_block_.41
+___destroy_helper_block_.42
+-[TyphoonMethod(InstanceBuilder) checkParametersCount]
+-[TyphoonMethod(InstanceBuilder) isClassMethodOnClass:]
+-[TyphoonMethod(InstanceBuilder) methodSignatureWithTarget:isClassMethod:]
+___block_descriptor_tmp.39
+___block_descriptor_tmp.44
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Method/Internal/TyphoonMethod+InstanceBuilder.m
+__73-[TyphoonMethod(InstanceBuilder) createInvocationWithContext:completion:]_block_invoke.40
+__73-[TyphoonMethod(InstanceBuilder) createInvocationWithContext:completion:]_block_invoke_2
+__73-[TyphoonMethod(InstanceBuilder) createInvocationWithContext:completion:]_block_invoke
+-[TyphoonMethod initWithSelector:]
+-[TyphoonMethod init]
+-[TyphoonMethod addParameterInjection:]
+-[TyphoonMethod indexToAddParameter]
+-[TyphoonMethod injectParameterAtIndex:with:]
+-[TyphoonMethod injectParameterWith:]
+-[TyphoonMethod copyWithZone:]
+-[TyphoonMethod hash]
+-[TyphoonMethod calculateHash]
+-[TyphoonMethod isEqual:]
+-[TyphoonMethod isEqualToMethod:]
+-[TyphoonMethod selector]
+-[TyphoonMethod .cxx_destruct]
+_OBJC_IVAR_$_TyphoonMethod._needUpdateHash
+_OBJC_IVAR_$_TyphoonMethod._hash
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Method/TyphoonMethod.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Method/TyphoonMethod.h
+-[TyphoonDefinition init]
+-[TyphoonDefinition initWithClass:key:]
++[TyphoonDefinition withClass:key:]
+-[TyphoonDefinition scope]
+-[TyphoonDefinition setScope:]
+-[TyphoonDefinition applyGlobalNamespace]
+-[TyphoonDefinition applyConcreteNamespace:]
+-[TyphoonDefinition initializer]
+-[TyphoonDefinition isInitializerGenerated]
+-[TyphoonDefinition beforeInjections]
+-[TyphoonDefinition afterInjections]
+-[TyphoonDefinition injectedProperties]
+-[TyphoonDefinition injectedMethods]
+-[TyphoonDefinition setParent:]
+-[TyphoonDefinition factory]
++[TyphoonDefinition withClass:]
++[TyphoonDefinition withClass:configuration:]
++[TyphoonDefinition withClass:key:injections:]
++[TyphoonDefinition withParent:class:]
++[TyphoonDefinition withParent:class:configuration:]
++[TyphoonDefinition withFactory:selector:]
++[TyphoonDefinition withFactory:selector:parameters:]
++[TyphoonDefinition withFactory:selector:parameters:configuration:]
+-[TyphoonDefinition typhoonCustomObjectInjection]
+-[TyphoonDefinition injectProperty:]
+-[TyphoonDefinition injectProperty:with:]
+-[TyphoonDefinition injectMethod:parameters:]
+-[TyphoonDefinition useInitializer:parameters:]
+-[TyphoonDefinition useInitializer:]
+-[TyphoonDefinition performBeforeInjections:]
+-[TyphoonDefinition performBeforeInjections:parameters:]
+-[TyphoonDefinition performAfterInjections:]
+-[TyphoonDefinition performAfterInjections:parameters:]
+-[TyphoonDefinition performAfterAllInjections:]
+-[TyphoonDefinition hasRuntimeArgumentInjections]
+___49-[TyphoonDefinition hasRuntimeArgumentInjections]_block_invoke
+-[TyphoonDefinition isCandidateForInjectedClass:includeSubclasses:]
+-[TyphoonDefinition isCandidateForInjectedProtocol:]
+-[TyphoonDefinition addInjectedProperty:]
+-[TyphoonDefinition addInjectedPropertyIfNotExists:]
+-[TyphoonDefinition replacePropertyInjection:with:]
+-[TyphoonDefinition enumerateInjectionsOfKind:options:usingBlock:]
+___66-[TyphoonDefinition enumerateInjectionsOfKind:options:usingBlock:]_block_invoke
+___copy_helper_block_.119
+___destroy_helper_block_.120
+___66-[TyphoonDefinition enumerateInjectionsOfKind:options:usingBlock:]_block_invoke.125
+___copy_helper_block_.126
+___destroy_helper_block_.127
+___66-[TyphoonDefinition enumerateInjectionsOfKind:options:usingBlock:]_block_invoke.129
+___copy_helper_block_.130
+___destroy_helper_block_.131
+___66-[TyphoonDefinition enumerateInjectionsOfKind:options:usingBlock:]_block_invoke.133
+___copy_helper_block_.134
+___destroy_helper_block_.135
+___66-[TyphoonDefinition enumerateInjectionsOfKind:options:usingBlock:]_block_invoke.137
+___copy_helper_block_.138
+___destroy_helper_block_.139
+-[TyphoonDefinition enumerateInjectionsOfKind:onCollection:withBlock:replaceBlock:]
+-[TyphoonDefinition property:]
+-[TyphoonDefinition keyPath:]
++[TyphoonDefinition with:]
+-[TyphoonDefinition copyWithZone:]
+-[TyphoonDefinition description]
+-[TyphoonDefinition validateScope]
+-[TyphoonDefinition validateParent]
+-[TyphoonDefinition validateRequiredParametersAreSet]
+-[TyphoonDefinition type]
+-[TyphoonDefinition autoInjectionVisibility]
+-[TyphoonDefinition setAutoInjectionVisibility:]
+-[TyphoonDefinition space]
+-[TyphoonDefinition parent]
+-[TyphoonDefinition abstract]
+-[TyphoonDefinition setAbstract:]
+-[TyphoonDefinition key]
+-[TyphoonDefinition setKey:]
+-[TyphoonDefinition setInitializerGenerated:]
+-[TyphoonDefinition afterAllInjections]
+-[TyphoonDefinition currentRuntimeArguments]
+-[TyphoonDefinition setCurrentRuntimeArguments:]
+-[TyphoonDefinition processed]
+-[TyphoonDefinition setProcessed:]
+-[TyphoonDefinition isScopeSetByUser]
+-[TyphoonDefinition assembly]
+-[TyphoonDefinition setAssembly:]
+-[TyphoonDefinition assemblySelector]
+-[TyphoonDefinition setAssemblySelector:]
+-[TyphoonDefinition .cxx_destruct]
+_OBJC_IVAR_$_TyphoonDefinition._type
+_OBJC_IVAR_$_TyphoonDefinition._key
+_OBJC_IVAR_$_TyphoonDefinition._scope
+_OBJC_IVAR_$_TyphoonDefinition._autoInjectionVisibility
+_OBJC_IVAR_$_TyphoonDefinition._injectedProperties
+_OBJC_IVAR_$_TyphoonDefinition._injectedMethods
+_OBJC_IVAR_$_TyphoonDefinition._parent
+_OBJC_IVAR_$_TyphoonDefinition._scopeSetByUser
+_OBJC_IVAR_$_TyphoonDefinition._space
+_OBJC_IVAR_$_TyphoonDefinition._initializer
+_OBJC_IVAR_$_TyphoonDefinition._initializerGenerated
+_OBJC_IVAR_$_TyphoonDefinition._beforeInjections
+_OBJC_IVAR_$_TyphoonDefinition._afterInjections
+_OBJC_IVAR_$_TyphoonDefinition._afterAllInjections
+___block_descriptor_tmp.122
+___block_descriptor_tmp.128
+___block_descriptor_tmp.132
+___block_descriptor_tmp.136
+___block_descriptor_tmp.140
+_OBJC_IVAR_$_TyphoonDefinition._processed
+_OBJC_IVAR_$_TyphoonDefinition._currentRuntimeArguments
+_OBJC_IVAR_$_TyphoonDefinition._abstract
+_OBJC_IVAR_$_TyphoonDefinition._assembly
+_OBJC_IVAR_$_TyphoonDefinition._assemblySelector
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/TyphoonDefinition.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Internal/TyphoonDefinition+Internal.h
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Infrastructure/TyphoonDefinition+Infrastructure.h
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/TyphoonDefinition.h
+TyphoonScopeToString
+__66-[TyphoonDefinition enumerateInjectionsOfKind:options:usingBlock:]_block_invoke.137
+__66-[TyphoonDefinition enumerateInjectionsOfKind:options:usingBlock:]_block_invoke.133
+__66-[TyphoonDefinition enumerateInjectionsOfKind:options:usingBlock:]_block_invoke.129
+__66-[TyphoonDefinition enumerateInjectionsOfKind:options:usingBlock:]_block_invoke.125
+__66-[TyphoonDefinition enumerateInjectionsOfKind:options:usingBlock:]_block_invoke
+__49-[TyphoonDefinition hasRuntimeArgumentInjections]_block_invoke
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/AutoInjection/TyphoonInjectedObject.m
+-[TyphoonCollaboratingAssembliesCollector initWithAssemblyClass:]
+-[TyphoonCollaboratingAssembliesCollector collectCollaboratingAssemblies]
+-[TyphoonCollaboratingAssembliesCollector collaboratingAssembliesForClass:withCollaboratorClasses:]
+-[TyphoonCollaboratingAssembliesCollector shouldCollectClass:backTo:]
+-[TyphoonCollaboratingAssembliesCollector assemblyClass]
+-[TyphoonCollaboratingAssembliesCollector setAssemblyClass:]
+_OBJC_IVAR_$_TyphoonCollaboratingAssembliesCollector._assemblyClass
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonCollaboratingAssembliesCollector.m
++[TyphoonBlockDefinition withBlock:]
++[TyphoonBlockDefinition withBlock:configuration:]
++[TyphoonBlockDefinition withInitializer:injections:]
++[TyphoonBlockDefinition withInitializer:injections:configuration:]
++[TyphoonBlockDefinition withClass:block:]
++[TyphoonBlockDefinition withClass:block:configuration:]
++[TyphoonBlockDefinition withClass:injections:]
++[TyphoonBlockDefinition withClass:injections:configuration:]
++[TyphoonBlockDefinition withClass:initializer:injections:configuration:]
+-[TyphoonBlockDefinition initializer]
+-[TyphoonBlockDefinition isInitializerGenerated]
+-[TyphoonBlockDefinition copyWithZone:]
+-[TyphoonBlockDefinition hasInitializerBlock]
+-[TyphoonBlockDefinition setHasInitializerBlock:]
+-[TyphoonBlockDefinition hasInjectionsBlock]
+-[TyphoonBlockDefinition setHasInjectionsBlock:]
+_OBJC_IVAR_$_TyphoonBlockDefinition._hasInitializerBlock
+_OBJC_IVAR_$_TyphoonBlockDefinition._hasInjectionsBlock
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/TyphoonBlockDefinition.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Internal/TyphoonBlockDefinition+Internal.h
+-[TyphoonFactoryAutoInjectionPostProcessor postProcessDefinition:replacement:withFactory:]
+-[TyphoonFactoryAutoInjectionPostProcessor postProcessDefinition:]
+-[TyphoonFactoryAutoInjectionPostProcessor autoInjectedPropertiesForClass:]
+l_OBJC_PROTOCOL_$_TyphoonInjectedProtocol
+l_OBJC_LABEL_PROTOCOL_$_TyphoonInjectedProtocol
+l_OBJC_PROTOCOL_REFERENCE_$_TyphoonInjectedProtocol
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/AutoInjection/TyphoonFactoryAutoInjectionPostProcessor.m
+TypeForInjectionFromType
+IsTyphoonAutoInjectionType
++[TyphoonAssemblyBuilder(PlistProcessor) buildAssembliesFromPlistInBundle:]
++[TyphoonAssemblyBuilder(PlistProcessor) plistAssemblyNames:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonAssemblyBuilder+PlistProcessor.m
++[TyphoonAssembly assembly]
++[TyphoonAssembly defaultAssembly]
++[TyphoonAssembly load]
++[TyphoonAssembly reserveSelectors]
++[TyphoonAssembly markSelectorReserved:]
++[TyphoonAssembly markSelectorReservedFromString:]
++[TyphoonAssembly selectorIsReserved:]
++[TyphoonAssembly resolveInstanceMethod:]
+-[TyphoonAssembly forwardInvocation:]
+-[TyphoonAssembly init]
+-[TyphoonAssembly typhoonCustomObjectInjection]
+-[TyphoonAssembly componentForType:]
+-[TyphoonAssembly allComponentsForType:]
+-[TyphoonAssembly componentForKey:]
+-[TyphoonAssembly componentForKey:args:]
+-[TyphoonAssembly inject:]
+-[TyphoonAssembly inject:withSelector:]
+-[TyphoonAssembly makeDefault]
+-[TyphoonAssembly attachPostProcessor:]
+-[TyphoonAssembly attachDefinitionPostProcessor:]
+-[TyphoonAssembly attachInstancePostProcessor:]
+-[TyphoonAssembly attachTypeConverter:]
+-[TyphoonAssembly objectForKeyedSubscript:]
+-[TyphoonAssembly activate]
+-[TyphoonAssembly activateWithConfigResourceName:]
+-[TyphoonAssembly activateWithCollaboratingAssemblies:]
+-[TyphoonAssembly activateWithCollaboratingAssemblies:postProcessors:]
+-[TyphoonAssembly attachProcessors:]
+-[TyphoonAssembly proxyCollaboratingAssembliesPriorToActivation]
+-[TyphoonAssembly activateWithFactory:collaborators:]
+-[TyphoonAssembly assemblyConformingTo:in:]
+-[TyphoonAssembly assemblyWithType:in:]
+-[TyphoonAssembly definitions]
+-[TyphoonAssembly prepareForUse]
+-[TyphoonAssembly assemblyClassForKey:]
+-[TyphoonAssembly preattachInfrastructureComponent:]
+-[TyphoonAssembly definitionSelectors]
+-[TyphoonAssembly setDefinitionSelectors:]
+-[TyphoonAssembly preattachedInfrastructureComponents]
+-[TyphoonAssembly setPreattachedInfrastructureComponents:]
+-[TyphoonAssembly assemblyClassPerDefinitionKey]
+-[TyphoonAssembly setAssemblyClassPerDefinitionKey:]
+-[TyphoonAssembly adviser]
+-[TyphoonAssembly factory]
+-[TyphoonAssembly collector]
+-[TyphoonAssembly .cxx_destruct]
+_reservedSelectorsAsStrings
+_OBJC_IVAR_$_TyphoonAssembly._factory
+_OBJC_IVAR_$_TyphoonAssembly._definitionBuilder
+_OBJC_IVAR_$_TyphoonAssembly._adviser
+_OBJC_IVAR_$_TyphoonAssembly._collector
+_OBJC_IVAR_$_TyphoonAssembly._preattachedInfrastructureComponents
+_OBJC_IVAR_$_TyphoonAssembly._definitionSelectors
+_OBJC_IVAR_$_TyphoonAssembly._assemblyClassPerDefinitionKey
+l_OBJC_PROTOCOL_$_TyphoonComponentFactory
+l_OBJC_LABEL_PROTOCOL_$_TyphoonComponentFactory
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Assembly/TyphoonAssembly.m
++[TyphoonColorConversionUtils colorFromHexString:]
++[TyphoonColorConversionUtils colorFromCssStyleString:]
++[TyphoonColorConversionUtils colorFromRed:green:blue:alpha:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/TypeConversion/Helpers/TyphoonColorConversionUtils.m
+-[NSInvocation(TCFInstanceBuilder) typhoon_resultOfInvokingOn:]
+-[NSInvocation(TCFInstanceBuilder) typhoon_resultOfInvokingOnInstance:]
+-[NSInvocation(TCFInstanceBuilder) typhoon_resultOfInvokingOnAllocationForClass:]
+___typhoon_IsSelectorReturnsRetained_block_invoke
+_typhoon_IsSelectorReturnsRetained.methodFamily
+_typhoon_IsSelectorReturnsRetained.onceToken
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/NSInvocation+TCFInstanceBuilder.m
+__typhoon_IsSelectorReturnsRetained_block_invoke
+typhoon_IsSelectorReturnsRetained
+-[NSInvocation(TCFUnwrapValues) typhoon_setArgumentObject:atIndex:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/NSInvocation+TCFUnwrapValues.m
+-[NSMethodSignature(TCFUnwrapValues) shouldUnwrapValue:forArgumentAtIndex:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/NSMethodSignature+TCFUnwrapValues.m
+-[NSValue(TCFUnwrapValues) typhoon_setAsArgumentForInvocation:atIndex:]
+-[NSNumber(TCFUnwrapValues) typhoon_setAsArgumentForInvocation:atIndex:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/NSValue+TCFUnwrapValues.m
++[TyphoonCallStack stack]
+-[TyphoonCallStack init]
+-[TyphoonCallStack push:]
+-[TyphoonCallStack pop]
+-[TyphoonCallStack peekForKey:args:]
+-[TyphoonCallStack isEmpty]
+-[TyphoonCallStack isResolvingKey:withArgs:]
+-[TyphoonCallStack notifyOnceWhenStackEmptyUsingBlock:]
+-[TyphoonCallStack callNotificationBlocksAndClear]
+-[TyphoonCallStack .cxx_destruct]
+_OBJC_IVAR_$_TyphoonCallStack._storage
+_OBJC_IVAR_$_TyphoonCallStack._emptyNotificationBlocks
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonCallStack.m
+-[TyphoonGlobalConfigCollector initWithAppDelegate:]
+-[TyphoonGlobalConfigCollector obtainGlobalConfigFilenamesFromBundle:]
+-[TyphoonGlobalConfigCollector fetchConfigFilenamesFromPlistKeyInBundle:]
+-[TyphoonGlobalConfigCollector fetchConfigFilenamesFromAppDelegate]
+-[TyphoonGlobalConfigCollector fetchConfigFilenameFromOldStylePlistKeyInBundle:]
+-[TyphoonGlobalConfigCollector fetchConfigFilenameFromUniqueBundleIdInBundle:]
+-[TyphoonGlobalConfigCollector appDelegate]
+-[TyphoonGlobalConfigCollector setAppDelegate:]
+-[TyphoonGlobalConfigCollector .cxx_destruct]
+_OBJC_IVAR_$_TyphoonGlobalConfigCollector._appDelegate
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Configuration/GlobalConfigResolver/TyphoonGlobalConfigCollector.m
+-[TyphoonComponentFactory(InstanceBuilder) stack]
+-[TyphoonComponentFactory(InstanceBuilder) buildInstanceWithDefinition:args:]
+-[TyphoonComponentFactory(InstanceBuilder) initializeInstanceWithDefinition:args:]
+-[TyphoonComponentFactory(InstanceBuilder) doInjectionEventsOn:withDefinition:args:]
+___84-[TyphoonComponentFactory(InstanceBuilder) doInjectionEventsOn:withDefinition:args:]_block_invoke
+-[TyphoonComponentFactory(InstanceBuilder) postProcessInstance:]
+-[TyphoonComponentFactory(InstanceBuilder) injectAssemblyOnInstanceIfTyphoonAware:]
+-[TyphoonComponentFactory(InstanceBuilder) buildSharedInstanceForDefinition:args:]
+-[TyphoonComponentFactory(InstanceBuilder) resolveCircularDependency:args:resolvedBlock:]
+___89-[TyphoonComponentFactory(InstanceBuilder) resolveCircularDependency:args:resolvedBlock:]_block_invoke
+___copy_helper_block_.83
+___destroy_helper_block_.84
+-[TyphoonComponentFactory(InstanceBuilder) definitionForType:]
+-[TyphoonComponentFactory(InstanceBuilder) definitionForType:orNil:includeSubclasses:]
+-[TyphoonComponentFactory(InstanceBuilder) allDefinitionsForType:]
+-[TyphoonComponentFactory(InstanceBuilder) allDefinitionsForType:includeSubclasses:]
+-[TyphoonComponentFactory(InstanceBuilder) autoInjectionDefinitionForClass:]
+-[TyphoonComponentFactory(InstanceBuilder) autoInjectionPostProcessor]
+___block_descriptor_tmp.86
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonComponentFactory+InstanceBuilder.m
+__89-[TyphoonComponentFactory(InstanceBuilder) resolveCircularDependency:args:resolvedBlock:]_block_invoke
+__84-[TyphoonComponentFactory(InstanceBuilder) doInjectionEventsOn:withDefinition:args:]_block_invoke
+-[TyphoonFactoryPropertyInjectionPostProcessor postProcessDefinition:replacement:withFactory:]
+___94-[TyphoonFactoryPropertyInjectionPostProcessor postProcessDefinition:replacement:withFactory:]_block_invoke
+-[TyphoonFactoryPropertyInjectionPostProcessor shouldReplaceInjectionByType:withFactoryInjectionInDefinition:]
+-[TyphoonFactoryPropertyInjectionPostProcessor factoryInjectionToReplacePropertyInjection:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonFactoryPropertyInjectionPostProcessor.m
+__94-[TyphoonFactoryPropertyInjectionPostProcessor postProcessDefinition:replacement:withFactory:]_block_invoke
+-[TyphoonParentReferenceHydratingPostProcessor postProcessDefinition:replacement:withFactory:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonParentReferenceHydratingPostProcessor.m
++[TyphoonStackElement elementWithKey:args:]
+-[TyphoonStackElement initWithKey:args:]
+-[TyphoonStackElement isInitializingInstance]
+-[TyphoonStackElement instance]
+-[TyphoonStackElement addInstanceCompleteBlock:]
+-[TyphoonStackElement takeInstance:]
+-[TyphoonStackElement description]
+-[TyphoonStackElement key]
+-[TyphoonStackElement args]
+-[TyphoonStackElement .cxx_destruct]
+_OBJC_IVAR_$_TyphoonStackElement._key
+_OBJC_IVAR_$_TyphoonStackElement._args
+_OBJC_IVAR_$_TyphoonStackElement.completeBlocks
+_OBJC_IVAR_$_TyphoonStackElement._instance
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonStackElement.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonStackElement.h
+-[TyphoonWeakComponentsPool init]
+-[TyphoonWeakComponentsPool setObject:forKey:]
+___46-[TyphoonWeakComponentsPool setObject:forKey:]_block_invoke
+-[TyphoonWeakComponentsPool objectForKey:]
+-[TyphoonWeakComponentsPool allValues]
+-[TyphoonWeakComponentsPool removeAllObjects]
+-[TyphoonWeakComponentsPool .cxx_destruct]
+_OBJC_IVAR_$_TyphoonWeakComponentsPool.dictionaryWithNonRetainedObjects
+l_OBJC_PROTOCOL_$_TyphoonComponentsPool
+l_OBJC_LABEL_PROTOCOL_$_TyphoonComponentsPool
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Pool/TyphoonWeakComponentsPool.m
+__46-[TyphoonWeakComponentsPool setObject:forKey:]_block_invoke
++[TyphoonAssemblyBuilder buildAssemblyWithClass:]
++[TyphoonAssemblyBuilder buildAssembliesWithClasses:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonAssemblyBuilder.m
++[TyphoonBlockDefinitionController currentController]
+-[TyphoonBlockDefinitionController isBuildingInstance]
+-[TyphoonBlockDefinitionController useConfigurationRouteWithinBlock:]
+-[TyphoonBlockDefinitionController useInitializerRouteWithDefinition:injectionContext:withinBlock:]
+-[TyphoonBlockDefinitionController useInjectionsRouteWithDefinition:instance:injectionContext:withinBlock:]
+-[TyphoonBlockDefinitionController useRoute:withinBlock:]
+-[TyphoonBlockDefinitionController route]
+-[TyphoonBlockDefinitionController definition]
+-[TyphoonBlockDefinitionController instance]
+-[TyphoonBlockDefinitionController injectionContext]
+-[TyphoonBlockDefinitionController .cxx_destruct]
+_OBJC_IVAR_$_TyphoonBlockDefinitionController._route
+_OBJC_IVAR_$_TyphoonBlockDefinitionController._definition
+_OBJC_IVAR_$_TyphoonBlockDefinitionController._injectionContext
+_OBJC_IVAR_$_TyphoonBlockDefinitionController._instance
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Internal/TyphoonBlockDefinitionController.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Internal/TyphoonBlockDefinitionController.h
++[TyphoonComponentFactory defaultFactory]
++[TyphoonComponentFactory setFactoryForResolvingUI:]
++[TyphoonComponentFactory factoryForResolvingUI]
++[TyphoonComponentFactory factoryForResolvingFromXibs]
+-[TyphoonComponentFactory init]
+-[TyphoonComponentFactory attachAutoInjectionPostProcessorIfNeeded]
+-[TyphoonComponentFactory singletons]
+-[TyphoonComponentFactory load]
+-[TyphoonComponentFactory unload]
+-[TyphoonComponentFactory registerDefinition:]
+-[TyphoonComponentFactory objectForKeyedSubscript:]
+-[TyphoonComponentFactory componentForType:]
+-[TyphoonComponentFactory allComponentsForType:]
+-[TyphoonComponentFactory componentForKey:]
+-[TyphoonComponentFactory componentForKey:args:]
+-[TyphoonComponentFactory loadIfNeeded]
+-[TyphoonComponentFactory makeDefault]
+-[TyphoonComponentFactory typeConverterRegistry]
+-[TyphoonComponentFactory registry]
+-[TyphoonComponentFactory enumerateDefinitions:]
+-[TyphoonComponentFactory attachDefinitionPostProcessor:]
+-[TyphoonComponentFactory attachInstancePostProcessor:]
+-[TyphoonComponentFactory attachTypeConverter:]
+-[TyphoonComponentFactory attachPostProcessor:]
+-[TyphoonComponentFactory inject:]
+-[TyphoonComponentFactory inject:withSelector:]
+-[TyphoonComponentFactory description]
+-[TyphoonComponentFactory _load]
+-[TyphoonComponentFactory orderedArray:]
+___40-[TyphoonComponentFactory orderedArray:]_block_invoke
+-[TyphoonComponentFactory preparePostProcessors]
+-[TyphoonComponentFactory applyPostProcessors]
+___46-[TyphoonComponentFactory applyPostProcessors]_block_invoke
+-[TyphoonComponentFactory definitionAfterApplyingPostProcessorsToDefinition:]
+-[TyphoonComponentFactory instantiateEagerSingletons]
+___53-[TyphoonComponentFactory instantiateEagerSingletons]_block_invoke
+___copy_helper_block_.183
+___destroy_helper_block_.184
+-[TyphoonComponentFactory instantiateIfEagerSingleton:]
+-[TyphoonComponentFactory poolKeyForDefinition:args:]
+-[TyphoonComponentFactory poolForDefinition:]
+-[TyphoonComponentFactory inject:withDefinition:]
+-[TyphoonComponentFactory isLoaded]
+-[TyphoonComponentFactory setLoaded:]
+-[TyphoonComponentFactory definitionPostProcessors]
+-[TyphoonComponentFactory instancePostProcessors]
+-[TyphoonComponentFactory .cxx_destruct]
+-[TyphoonComponentFactory(TyphoonDefinitionRegisterer) definitionForKey:]
+-[TyphoonComponentFactory(TyphoonDefinitionRegisterer) newOrScopeCachedInstanceForDefinition:args:]
+-[TyphoonComponentFactory(TyphoonDefinitionRegisterer) addDefinitionToRegistry:]
+-[TyphoonComponentFactory(TyphoonDefinitionRegisterer) addInstancePostProcessor:]
+_uiResolvingFactory
+_defaultFactory
+l_OBJC_PROTOCOL_$_TyphoonOrdered
+l_OBJC_LABEL_PROTOCOL_$_TyphoonOrdered
+l_OBJC_PROTOCOL_REFERENCE_$_TyphoonOrdered
+___block_descriptor_tmp.178
+___block_descriptor_tmp.186
+_OBJC_IVAR_$_TyphoonComponentFactory._loaded
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/TyphoonComponentFactory.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/TyphoonComponentFactory.h
+__53-[TyphoonComponentFactory instantiateEagerSingletons]_block_invoke
+__46-[TyphoonComponentFactory applyPostProcessors]_block_invoke
+__40-[TyphoonComponentFactory orderedArray:]_block_invoke
+-[TyphoonDefinitionRegisterer initWithDefinition:componentFactory:]
+-[TyphoonDefinitionRegisterer doRegistration]
+-[TyphoonDefinitionRegisterer setDefinitionKeyRandomlyIfNeeded]
+-[TyphoonDefinitionRegisterer definitionAlreadyRegistered]
+-[TyphoonDefinitionRegisterer registerDefinitionWithFactory]
+-[TyphoonDefinitionRegisterer definitionIsInfrastructureComponent]
+-[TyphoonDefinitionRegisterer registerInfrastructureComponentFromDefinition]
+-[TyphoonDefinitionRegisterer .cxx_destruct]
+_OBJC_IVAR_$_TyphoonDefinitionRegisterer._definition
+_OBJC_IVAR_$_TyphoonDefinitionRegisterer._componentFactory
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/TyphoonDefinitionRegisterer.m
+-[TyphoonViewControllerNibResolver postProcessDefinition:replacement:withFactory:]
+-[TyphoonViewControllerNibResolver resolveNibNameForClass:]
+-[TyphoonViewControllerNibResolver processViewControllerDefinition:]
+___68-[TyphoonViewControllerNibResolver processViewControllerDefinition:]_block_invoke
+-[TyphoonViewControllerNibResolver shouldProcessDefinition:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/ios/Configuration/Resolver/TyphoonViewControllerNibResolver.m
+__68-[TyphoonViewControllerNibResolver processViewControllerDefinition:]_block_invoke
+-[UIViewController(TyphoonStoryboardIntegration) setTyphoonKey:]
+-[UIViewController(TyphoonStoryboardIntegration) typhoonKey]
+-[UIViewController(TyphoonStoryboardIntegration) setViewDidLoadNotificationBlock:]
++[UIViewController(TyphoonStoryboardIntegration) swizzleViewDidLoadMethod]
+___74+[UIViewController(TyphoonStoryboardIntegration) swizzleViewDidLoadMethod]_block_invoke
+-[UIView(TyphoonDefinitionKey) setTyphoonKey:]
+-[UIView(TyphoonDefinitionKey) typhoonKey]
++[TyphoonStoryboard load]
++[TyphoonStoryboard storyboardWithName:bundle:]
++[TyphoonStoryboard storyboardWithName:factory:bundle:]
+-[TyphoonStoryboard instantiateViewControllerWithIdentifier:]
+-[TyphoonStoryboard injectPropertiesForViewController:]
+___55-[TyphoonStoryboard injectPropertiesForViewController:]_block_invoke
+-[TyphoonStoryboard injectPropertiesInView:]
+-[TyphoonStoryboard factory]
+-[TyphoonStoryboard setFactory:]
+-[TyphoonStoryboard .cxx_destruct]
+_kTyphoonKey
+_kTyphoonViewDidLoadBlock
+_OBJC_IVAR_$_TyphoonStoryboard._factory
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/ios/Storyboard/TyphoonStoryboard.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/ios/Storyboard/TyphoonStoryboard.h
+__55-[TyphoonStoryboard injectPropertiesForViewController:]_block_invoke
+__74+[UIViewController(TyphoonStoryboardIntegration) swizzleViewDidLoadMethod]_block_invoke
++[TyphoonStoryboardResolver load]
++[TyphoonStoryboardResolver swizzleUIStoryboardWithNames:]
+___58+[TyphoonStoryboardResolver swizzleUIStoryboardWithNames:]_block_invoke
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/ios/Storyboard/TyphoonStoryboardResolver.m
+__58+[TyphoonStoryboardResolver swizzleUIStoryboardWithNames:]_block_invoke
+-[TyphoonBundledImageTypeConverter supportedType]
+-[TyphoonBundledImageTypeConverter convert:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/ios/TypeConversion/Converters/TyphoonBundledImageTypeConverter.m
+-[TyphoonUIColorTypeConverter supportedType]
+-[TyphoonUIColorTypeConverter convert:]
+-[TyphoonUIColorTypeConverter colorFromRGBA:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/ios/TypeConversion/Converters/TyphoonUIColorTypeConverter.m
+-[TyphoonPatcherDefinition initWithOriginalDefinition:patchObjectBlock:]
+-[TyphoonPatcherDefinition targetForInitializerWithFactory:args:]
+-[TyphoonPatcherDefinition initializer]
+-[TyphoonPatcherDefinition copyWithZone:]
+-[TyphoonPatcherDefinition patchObjectBlock]
+-[TyphoonPatcherDefinition setPatchObjectBlock:]
+-[TyphoonPatcherDefinition .cxx_destruct]
+-[TyphoonPatcher init]
+-[TyphoonPatcher patchDefinitionWithKey:withObject:]
+-[TyphoonPatcher patchDefinitionWithSelector:withObject:]
+-[TyphoonPatcher detach]
+-[TyphoonPatcher postProcessDefinition:replacement:withFactory:]
+-[TyphoonPatcher .cxx_destruct]
+-[TyphoonPatcher(Deprecated) patchDefinition:withObject:]
+_OBJC_IVAR_$_TyphoonPatcherDefinition._patchObjectBlock
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Test/Patcher/TyphoonPatcher.m
++[TyphoonTestUtils waitForCondition:]
+___37+[TyphoonTestUtils waitForCondition:]_block_invoke
++[TyphoonTestUtils waitForCondition:andPerformTests:]
++[TyphoonTestUtils wait:secondsForCondition:andPerformTests:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Test/TestUtils/TyphoonTestUtils.m
+__37+[TyphoonTestUtils waitForCondition:]_block_invoke
+-[TyphoonNSURLTypeConverter supportedType]
+-[TyphoonNSURLTypeConverter convert:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/TypeConversion/Converters/TyphoonNSURLTypeConverter.m
+-[TyphoonPassThroughTypeConverter initWithIsMutable:]
+-[TyphoonPassThroughTypeConverter supportedType]
+-[TyphoonPassThroughTypeConverter convert:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/TypeConversion/Converters/TyphoonPassThroughTypeConverter.m
+-[TyphoonPrimitiveTypeConverter convertToInt:]
+-[TyphoonPrimitiveTypeConverter convertToShort:]
+-[TyphoonPrimitiveTypeConverter convertToLong:]
+-[TyphoonPrimitiveTypeConverter convertToLongLong:]
+-[TyphoonPrimitiveTypeConverter convertToUnsignedChar:]
+-[TyphoonPrimitiveTypeConverter convertToUnsignedInt:]
+-[TyphoonPrimitiveTypeConverter convertToUnsignedShort:]
+-[TyphoonPrimitiveTypeConverter convertToUnsignedLong:]
+-[TyphoonPrimitiveTypeConverter convertToUnsignedLongLong:]
+-[TyphoonPrimitiveTypeConverter convertToFloat:]
+-[TyphoonPrimitiveTypeConverter convertToDouble:]
+-[TyphoonPrimitiveTypeConverter convertToBoolean:]
+-[TyphoonPrimitiveTypeConverter convertToCString:]
+-[TyphoonPrimitiveTypeConverter convertToClass:]
+-[TyphoonPrimitiveTypeConverter convertToSelector:]
+-[TyphoonPrimitiveTypeConverter convertToPointer:]
+-[TyphoonPrimitiveTypeConverter valueFromText:withType:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/TypeConversion/Converters/TyphoonPrimitiveTypeConverter.m
+-[TyphoonNSNumberTypeConverter supportedType]
+-[TyphoonNSNumberTypeConverter convert:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/TypeConversion/Converters/TyphoonNSNumberTypeConverter.m
+-[TyphoonTypeConverterRegistry init]
+-[TyphoonTypeConverterRegistry converterForType:]
+-[TyphoonTypeConverterRegistry primitiveTypeConverter]
+-[TyphoonTypeConverterRegistry registerTypeConverter:]
+-[TyphoonTypeConverterRegistry unregisterTypeConverter:]
+-[TyphoonTypeConverterRegistry registerSharedConverters]
+-[TyphoonTypeConverterRegistry registerPlatformConverters]
+-[TyphoonTypeConverterRegistry setPrimitiveTypeConverter:]
+-[TyphoonTypeConverterRegistry typeConverters]
+-[TyphoonTypeConverterRegistry setTypeConverters:]
+-[TyphoonTypeConverterRegistry .cxx_destruct]
+_OBJC_IVAR_$_TyphoonTypeConverterRegistry._typeConverters
+_OBJC_IVAR_$_TyphoonTypeConverterRegistry._primitiveTypeConverter
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/TypeConversion/TyphoonTypeConverterRegistry.m
++[NSDictionary(TyphoonPrimitiveType) dictionaryWithTyphoonPrimitiveTypesAsStrings]
+___82+[NSDictionary(TyphoonPrimitiveType) dictionaryWithTyphoonPrimitiveTypesAsStrings]_block_invoke
++[TyphoonTypeDescriptor descriptorWithEncodedType:]
++[TyphoonTypeDescriptor descriptorWithTypeCode:]
++[TyphoonTypeDescriptor descriptorWithType:]
+-[TyphoonTypeDescriptor initWithTypeCode:]
+-[TyphoonTypeDescriptor initWithType:]
+-[TyphoonTypeDescriptor classOrProtocol]
+-[TyphoonTypeDescriptor encodedType]
+-[TyphoonTypeDescriptor protocol]
+-[TyphoonTypeDescriptor description]
+-[TyphoonTypeDescriptor parsePrimitiveType:]
+-[TyphoonTypeDescriptor extractArrayInformation:]
+-[TyphoonTypeDescriptor extractPointerInformation:]
+-[TyphoonTypeDescriptor extractStructureInformation:]
+-[TyphoonTypeDescriptor extractObjectInformation:]
+-[TyphoonTypeDescriptor typeFromTypeCode:]
+-[TyphoonTypeDescriptor isPrimitive]
+-[TyphoonTypeDescriptor primitiveType]
+-[TyphoonTypeDescriptor typeBeingDescribed]
+-[TyphoonTypeDescriptor declaredProtocol]
+-[TyphoonTypeDescriptor isArray]
+-[TyphoonTypeDescriptor arrayLength]
+-[TyphoonTypeDescriptor isPointer]
+-[TyphoonTypeDescriptor isStructure]
+-[TyphoonTypeDescriptor structureTypeName]
+-[TyphoonTypeDescriptor .cxx_destruct]
+_dictionaryWithTyphoonPrimitiveTypesAsStrings.onceToken
+_dictionaryWithTyphoonPrimitiveTypesAsStrings._typhoonPrimitiveTypesAsStrings
+_OBJC_IVAR_$_TyphoonTypeDescriptor._isPrimitive
+_OBJC_IVAR_$_TyphoonTypeDescriptor._declaredProtocol
+_OBJC_IVAR_$_TyphoonTypeDescriptor._typeBeingDescribed
+_OBJC_IVAR_$_TyphoonTypeDescriptor._typeCode
+_OBJC_IVAR_$_TyphoonTypeDescriptor._primitiveType
+_OBJC_IVAR_$_TyphoonTypeDescriptor._isArray
+_OBJC_IVAR_$_TyphoonTypeDescriptor._arrayLength
+_OBJC_IVAR_$_TyphoonTypeDescriptor._isPointer
+_OBJC_IVAR_$_TyphoonTypeDescriptor._isStructure
+_OBJC_IVAR_$_TyphoonTypeDescriptor._structureTypeName
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/TypeConversion/TyphoonTypeDescriptor.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/TypeConversion/TyphoonTypeDescriptor.h
+__82+[NSDictionary(TyphoonPrimitiveType) dictionaryWithTyphoonPrimitiveTypesAsStrings]_block_invoke
+-[TyphoonNextSignal next]
+-[TyphoonNextSignal setNextBlock:]
+-[TyphoonNextSignal .cxx_destruct]
+-[NSArray(TyphoonSignalEnumerator) typhoon_enumerateObjectsWithManualIteration:completion:]
+___91-[NSArray(TyphoonSignalEnumerator) typhoon_enumerateObjectsWithManualIteration:completion:]_block_invoke
+-[NSArray(TyphoonSignalEnumerator) typhoon_doStepWithEnumerator:signal:block:completion:]
+_OBJC_IVAR_$_TyphoonNextSignal._block
+l_OBJC_PROTOCOL_$_TyphoonIterator
+l_OBJC_LABEL_PROTOCOL_$_TyphoonIterator
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Utils/NSArray+TyphoonManualEnumeration.m
+__91-[NSArray(TyphoonSignalEnumerator) typhoon_enumerateObjectsWithManualIteration:completion:]_block_invoke
+-[DeallocCallbackObject initWithDeallocCallback:]
+-[DeallocCallbackObject removeCallback]
+-[DeallocCallbackObject dealloc]
+-[DeallocCallbackObject .cxx_destruct]
+-[NSObject(DeallocNotifier) setDeallocNotificationInBlock:]
+-[NSObject(DeallocNotifier) removeDeallocNotification]
+-[NSObject(DeallocNotifier) setDeallocNotificationWithKey:andBlock:]
+-[NSObject(DeallocNotifier) removeDeallocNotificationForKey:]
+_OBJC_IVAR_$_DeallocCallbackObject.callback
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Utils/NSObject+DeallocNotification.m
+-[NSObject(PropertyInjection) typhoon_injectValue:forPropertyName:]
+-[NSObject(PropertyInjection) typhoon_injectUnwrappedValue:forPropertySetter:signature:]
+-[NSObject(PropertyInjection) typhoon_injectObject:forPropertySetter:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Utils/NSObject+PropertyInjection.m
+-[NSObject(TyphoonIntrospectionUtils) typhoonPropertiesUpToParentClass:]
+-[NSObject(TyphoonIntrospectionUtils) typhoonTypeForPropertyNamed:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Utils/NSObject+TyphoonIntrospectionUtils.m
++[TyphoonSwizzlerDefaultImpl instance]
+___38+[TyphoonSwizzlerDefaultImpl instance]_block_invoke
+-[TyphoonSwizzlerDefaultImpl swizzleMethod:withMethod:onClass:error:]
+_instance.defaultSwizzler
+_instance.onceToken
+l_OBJC_PROTOCOL_$_TyphoonMethodSwizzler
+l_OBJC_LABEL_PROTOCOL_$_TyphoonMethodSwizzler
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Utils/Swizzle/TyphoonSwizzlerDefaultImpl.m
+__38+[TyphoonSwizzlerDefaultImpl instance]_block_invoke
++[TyphoonInject byType:]
++[TyphoonInject byConfigKey:]
++[TyphoonInject byConfigKey:type:]
+___34+[TyphoonInject byConfigKey:type:]_block_invoke
++[TyphoonInject resultWithInjection:definitionBlock:]
++[TyphoonInject valueToInjectWithInjection:context:]
+___52+[TyphoonInject valueToInjectWithInjection:context:]_block_invoke
+___copy_helper_block_.39
+___destroy_helper_block_.40
++[NSObject(TyphoonBlockInjection) typhoonInjectByType]
++[NSObject(TyphoonBlockInjection) typhoonInjectByConfigKey:]
+___block_descriptor_tmp.42
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Injections/TyphoonInject.m
+__52+[TyphoonInject valueToInjectWithInjection:context:]_block_invoke
+__34+[TyphoonInject byConfigKey:type:]_block_invoke
++[TyphoonIntrospectionUtils typeForPropertyNamed:inClass:]
++[TyphoonIntrospectionUtils setterForPropertyWithName:inClass:]
++[TyphoonIntrospectionUtils getterForPropertyWithName:inClass:]
++[TyphoonIntrospectionUtils methodSignatureWithArgumentsAndReturnValueAsObjectsFromSelector:]
++[TyphoonIntrospectionUtils numberOfArgumentsInSelector:]
++[TyphoonIntrospectionUtils propertiesForClass:upToParentClass:]
++[TyphoonIntrospectionUtils methodsForClass:upToParentClass:]
++[TyphoonIntrospectionUtils classNameOfProperty:]
++[TyphoonIntrospectionUtils isReadonlyProperty:]
++[TyphoonIntrospectionUtils customSetterForProperty:]
++[TyphoonIntrospectionUtils customGetterForProperty:]
++[TyphoonIntrospectionUtils defaultSetterForPropertyWithName:]
++[TyphoonIntrospectionUtils defaultGetterForPropertyWithName:]
+___TyphoonDefaultModuleName_block_invoke
+___TyphoonClassFromFrameworkString_block_invoke
+___TyphoonClassFromFrameworkString_block_invoke_2
+_typeForPropertyNamed:inClass:.buffer
+_TyphoonDefaultModuleName.defaultModuleName
+_TyphoonDefaultModuleName.onceToken
+_TyphoonClassFromFrameworkString.frameworkNames
+_TyphoonClassFromFrameworkString.onceToken
+___block_descriptor_tmp.118
+___block_descriptor_tmp.123
+___block_literal_global.124
+l_OBJC_PROTOCOL_REFERENCE_$_NSObject
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Utils/TyphoonIntrospectionUtils.m
+IsProtocol
+IsBlock
+__TyphoonClassFromFrameworkString_block_invoke_2
+__TyphoonClassFromFrameworkString_block_invoke
+TyphoonClassFromFrameworkString
+TyphoonClassFromString
+TyphoonIsInvalidClassName
+__TyphoonDefaultModuleName_block_invoke
+TyphoonDefaultModuleName
+IsClass
+TyphoonTypeStringFor
+-[TyphoonStoryboardProvider collectStoryboardsFromBundle:]
+-[TyphoonStoryboardProvider filterStoryboards:withBlackListInBundle:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/ios/Storyboard/TyphoonStoryboardProvider.m
++[TyphoonSelector selectorWithName:]
++[TyphoonSelector selectorWithSEL:]
+-[TyphoonSelector initWithName:]
+-[TyphoonSelector initWithSEL:]
+-[TyphoonSelector description]
+-[TyphoonSelector hash]
+-[TyphoonSelector isEqual:]
+-[TyphoonSelector isEqualToSelector:]
+-[TyphoonSelector selector]
+_OBJC_IVAR_$_TyphoonSelector._selector
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Utils/TyphoonSelector.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Utils/TyphoonSelector.h
+-[TyphoonCollaboratingAssemblyPropertyEnumerator initWithAssembly:]
+-[TyphoonCollaboratingAssemblyPropertyEnumerator collaboratingAssemblyProperties]
+-[TyphoonCollaboratingAssemblyPropertyEnumerator propertyForName:isCollaboratingAssemblyPropertyOnClass:]
+-[TyphoonCollaboratingAssemblyPropertyEnumerator classNotRootAssemblyClass:]
+-[TyphoonCollaboratingAssemblyPropertyEnumerator propertyNameForProperty:]
+-[TyphoonCollaboratingAssemblyPropertyEnumerator assembly]
+-[TyphoonCollaboratingAssemblyPropertyEnumerator .cxx_destruct]
+_OBJC_IVAR_$_TyphoonCollaboratingAssemblyPropertyEnumerator._assembly
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonCollaboratingAssemblyPropertyEnumerator.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonCollaboratingAssemblyPropertyEnumerator.h
++[TyphoonDefinitionNamespace globalNamespace]
++[TyphoonDefinitionNamespace namespaceWithKey:]
+-[TyphoonDefinitionNamespace initWithKey:]
+-[TyphoonDefinitionNamespace isGlobalNamespace]
+-[TyphoonDefinitionNamespace hash]
+-[TyphoonDefinitionNamespace isEqual:]
+-[TyphoonDefinitionNamespace key]
+-[TyphoonDefinitionNamespace setKey:]
+-[TyphoonDefinitionNamespace .cxx_destruct]
+_OBJC_IVAR_$_TyphoonDefinitionNamespace._key
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Namespacing/TyphoonDefinitionNamespace.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Definition/Namespacing/TyphoonDefinitionNamespace.h
++[TyphoonRuntimeArguments argumentsFromInvocation:]
++[TyphoonRuntimeArguments validateRuntimeArgumentWithInjection:]
+___64+[TyphoonRuntimeArguments validateRuntimeArgumentWithInjection:]_block_invoke
+-[TyphoonRuntimeArguments initWithArguments:]
+-[TyphoonRuntimeArguments argumentValueAtIndex:]
+-[TyphoonRuntimeArguments enumerateArgumentsUsingBlock:]
+-[TyphoonRuntimeArguments replaceArgumentAtIndex:withArgument:]
++[TyphoonRuntimeArguments argumentsFromRuntimeArguments:appliedToReferenceArguments:]
+-[TyphoonRuntimeArguments indexOfArgumentWithKind:]
+___51-[TyphoonRuntimeArguments indexOfArgumentWithKind:]_block_invoke
+-[TyphoonRuntimeArguments copyWithZone:]
+-[TyphoonRuntimeArguments hash]
+-[TyphoonRuntimeArguments calculateHash]
+-[TyphoonRuntimeArguments description]
+-[TyphoonRuntimeArguments .cxx_destruct]
+_OBJC_IVAR_$_TyphoonRuntimeArguments._arguments
+_OBJC_IVAR_$_TyphoonRuntimeArguments._needRehash
+___block_descriptor_tmp.49
+_OBJC_IVAR_$_TyphoonRuntimeArguments._hash
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonRuntimeArguments.m
+__51-[TyphoonRuntimeArguments indexOfArgumentWithKind:]_block_invoke
+__64+[TyphoonRuntimeArguments validateRuntimeArgumentWithInjection:]_block_invoke
++[TyphoonAssemblySelectorAdviser prefixForClass:]
++[TyphoonAssemblySelectorAdviser advisedSELForKey:class:]
++[TyphoonAssemblySelectorAdviser keyForAdvisedSEL:]
++[TyphoonAssemblySelectorAdviser keyForSEL:]
++[TyphoonAssemblySelectorAdviser selectorIsAdvised:]
++[TyphoonAssemblySelectorAdviser advisedSELForSEL:class:]
++[TyphoonAssemblySelectorAdviser advisedNameForName:class:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonAssemblySelectorAdviser.m
+NSMaxRange
++[TyphoonCollaboratingAssemblyProxy proxy]
+___42+[TyphoonCollaboratingAssemblyProxy proxy]_block_invoke
+-[TyphoonCollaboratingAssemblyProxy forwardInvocation:]
+-[TyphoonCollaboratingAssemblyProxy methodSignatureForSelector:]
+-[TyphoonCollaboratingAssemblyProxy typhoonCustomObjectInjection]
+_proxy.onceToken
+_proxy.instance
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonCollaboratingAssemblyProxy.m
+__42+[TyphoonCollaboratingAssemblyProxy proxy]_block_invoke
+-[TyphoonAssemblyDefinitionBuilder initWithAssembly:]
+-[TyphoonAssemblyDefinitionBuilder builtDefinitions]
+-[TyphoonAssemblyDefinitionBuilder populateCache]
+___49-[TyphoonAssemblyDefinitionBuilder populateCache]_block_invoke
+___49-[TyphoonAssemblyDefinitionBuilder populateCache]_block_invoke_2
+___copy_helper_block_.23
+___destroy_helper_block_.24
+-[TyphoonAssemblyDefinitionBuilder buildDefinitionForKey:]
+-[TyphoonAssemblyDefinitionBuilder builtDefinitionForKey:args:]
+-[TyphoonAssemblyDefinitionBuilder resolveStackForKey:]
+-[TyphoonAssemblyDefinitionBuilder markCurrentlyResolvingKey:]
+-[TyphoonAssemblyDefinitionBuilder keyInvolvedInCircularDependency:]
+-[TyphoonAssemblyDefinitionBuilder definitionToTerminateCircularDependencyForKey:args:]
+-[TyphoonAssemblyDefinitionBuilder markKeyResolved:]
+-[TyphoonAssemblyDefinitionBuilder populateCacheWithDefinitionForKey:]
+-[TyphoonAssemblyDefinitionBuilder cachedDefinitionForKey:]
+-[TyphoonAssemblyDefinitionBuilder definitionForKey:]
+-[TyphoonAssemblyDefinitionBuilder assemblySelectorForKey:]
+-[TyphoonAssemblyDefinitionBuilder populateCacheWithDefinition:forKey:]
+-[TyphoonAssemblyDefinitionBuilder definitionBySettingKey:toDefinition:]
+-[TyphoonAssemblyDefinitionBuilder assembly]
+-[TyphoonAssemblyDefinitionBuilder .cxx_destruct]
+_OBJC_IVAR_$_TyphoonAssemblyDefinitionBuilder._assembly
+_OBJC_IVAR_$_TyphoonAssemblyDefinitionBuilder._resolveStackForSelector
+_OBJC_IVAR_$_TyphoonAssemblyDefinitionBuilder._cachedDefinitionsForMethodName
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonAssemblyDefinitionBuilder.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonAssemblyDefinitionBuilder.h
+objc_msgSend_InjectionArguments
+IsPrimitiveArgumentAllowed
+InjectionForArgumentType
+IsPrimitiveArgumentType
+__49-[TyphoonAssemblyDefinitionBuilder populateCache]_block_invoke_2
+__49-[TyphoonAssemblyDefinitionBuilder populateCache]_block_invoke
++[TyphoonBlockComponentFactory factoryWithAssembly:]
++[TyphoonBlockComponentFactory factoryWithAssemblies:]
+-[TyphoonBlockComponentFactory initWithAssembly:]
+-[TyphoonBlockComponentFactory initWithAssemblies:]
+-[TyphoonBlockComponentFactory buildAssembly:]
+-[TyphoonBlockComponentFactory assertIsAssembly:]
+-[TyphoonBlockComponentFactory registerAllDefinitions:]
+-[TyphoonBlockComponentFactory forwardInvocation:]
+-[TyphoonBlockComponentFactory methodSignatureForSelector:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonBlockComponentFactory.m
++[TyphoonAssemblyAdviser initialize]
+-[TyphoonAssemblyAdviser initWithAssembly:]
+-[TyphoonAssemblyAdviser adviseAssembly]
+-[TyphoonAssemblyAdviser swizzleAssemblyMethods]
+___48-[TyphoonAssemblyAdviser swizzleAssemblyMethods]_block_invoke
+-[TyphoonAssemblyAdviser swizzleDefinitionSelectors:onAssemblyClass:]
+___69-[TyphoonAssemblyAdviser swizzleDefinitionSelectors:onAssemblyClass:]_block_invoke
+-[TyphoonAssemblyAdviser swapImplementationOfDefinitionSelectorWithAdvisedImplementation:onAssemblyClass:]
++[TyphoonAssemblyAdviser onFailureToSwizzleDefinitionSelector:withAdvisedSelector:onAssemblyClass:error:]
+-[TyphoonAssemblyAdviser definitionSelectors]
+___45-[TyphoonAssemblyAdviser definitionSelectors]_block_invoke
+___copy_helper_block_.50
+___destroy_helper_block_.51
+-[TyphoonAssemblyAdviser assemblyClassPerDefinitionKey]
+___55-[TyphoonAssemblyAdviser assemblyClassPerDefinitionKey]_block_invoke
+___copy_helper_block_.62
+___destroy_helper_block_.63
+-[TyphoonAssemblyAdviser enumerateDefinitionSelectorsUsingBlock:]
+-[TyphoonAssemblyAdviser classNotRootAssemblyClass:]
+-[TyphoonAssemblyAdviser definitionSelectorsInAssemblyClass:]
+-[TyphoonAssemblyAdviser isSelector:notReservedOnClass:]
+-[TyphoonAssemblyAdviser isSelector:notAdvisedOnClass:]
+-[TyphoonAssemblyAdviser propertySelectorsForClass:]
+-[TyphoonAssemblyAdviser classIsNotAlreadyAdvised:]
++[TyphoonAssemblyAdviser markAsAdvisedAssemblyClass:]
++[TyphoonAssemblyAdviser markAsNotAdvisedAssemblyClass:]
++[TyphoonAssemblyAdviser assemblyClassIsAdvised:]
+-[TyphoonAssemblyAdviser assembly]
+-[TyphoonAssemblyAdviser swizzler]
+-[TyphoonAssemblyAdviser setSwizzler:]
+-[TyphoonAssemblyAdviser .cxx_destruct]
+_advisedAssemblyClasses
+_OBJC_IVAR_$_TyphoonAssemblyAdviser._assembly
+_OBJC_IVAR_$_TyphoonAssemblyAdviser._swizzler
+___block_descriptor_tmp.64
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonAssemblyAdviser.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonAssemblyAdviser.h
+__55-[TyphoonAssemblyAdviser assemblyClassPerDefinitionKey]_block_invoke
+__45-[TyphoonAssemblyAdviser definitionSelectors]_block_invoke
+__69-[TyphoonAssemblyAdviser swizzleDefinitionSelectors:onAssemblyClass:]_block_invoke
+__48-[TyphoonAssemblyAdviser swizzleAssemblyMethods]_block_invoke
++[TyphoonTypeConversionUtils typeFromTextValue:]
++[TyphoonTypeConversionUtils textWithoutTypeFromTextValue:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/TypeConversion/TyphoonTypeConversionUtils.m
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonCircularDependencyTerminator.m
+-[TyphoonAssemblyPropertyInjectionPostProcessor shouldReplaceInjectionByType:withFactoryInjectionInDefinition:]
+/Users/machome/Dev/StreamingTwitter/Carthage/Checkouts/Typhoon/Source/Factory/Internal/TyphoonAssemblyPropertyInjectionPostProcessor.m
+/Users/machome/Library/Developer/Xcode/DerivedData/Typhoon-gmxfsckokpcaledyqlckmrkqunsm/Build/Intermediates/Typhoon.build/Release-iphoneos/Typhoon.build/DerivedSources/Typhoon_vers.c
+__ZL15__ARCLite__loadv
+__ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
+__ZL22add_image_hook_swiftV1PK11mach_headerl
+__ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
+__ZL13replaceMethodP10objc_classP13objc_selectorPFP11objc_objectS4_S2_zEPS6_
+__ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
+__ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
+__ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
+__ZL37__arclite_NSKKMS_fastIndexForKnownKeyP11objc_objectP13objc_selectorS0_
+__ZL28__arclite_NSKKMS_indexForKeyP11objc_objectP13objc_selectorS0_
+__ZL29__arclite_NSKKsD_objectForKeyP11objc_objectP13objc_selectorS0_
+__ZL35__arclite_NSKKsD_removeObjectForKeyP11objc_objectP13objc_selectorS0_
+__ZL33__arclite_NSKKsD_setObject_forKeyP11objc_objectP13objc_selectorS0_S0_
+__ZL41__arclite_NSKKsD_addEntriesFromDictionaryP11objc_objectP13objc_selectorP12NSDictionary
+__ZL28__arclite_objc_readClassPairP10objc_classPK15objc_image_info
+__ZL32__arclite_objc_allocateClassPairP10objc_classPKcm
+__ZL32__arclite_object_getIndexedIvarsP11objc_object
+__ZL23__arclite_objc_getClassPKc
+__ZL27__arclite_objc_getMetaClassPKc
+__ZL31__arclite_objc_getRequiredClassPKc
+__ZL26__arclite_objc_lookUpClassPKc
+__ZL26__arclite_objc_getProtocolPKc
+__ZL23__arclite_class_getNameP10objc_class
+__ZL26__arclite_protocol_getNameP8Protocol
+__ZL37__arclite_objc_copyClassNamesForImagePKcPj
+__ZL17transcribeMethodsP10objc_classP15glue_class_ro_t
+__ZL19transcribeProtocolsP10objc_classP15glue_class_ro_t
+__ZL20transcribePropertiesP10objc_classP15glue_class_ro_t
+__ZL14initialize_impP11objc_objectP13objc_selector
+__ZL18allocateMaybeSwiftP18glue_swift_class_tm
+__ZL22copySwiftV1MangledNamePKcb
+__ZL13demangledNamePKcb
+__ZL16scanMangledFieldRPKcS0_S1_Ri
+__ZL30arclite_uninitialized_functionv
+__ZL12cxxConstructP11objc_object
+__ZL20fixStringForCoreDataP11objc_object
+_OBJC_METACLASS_$___ARCLite__
+__ZL24OBJC_CLASS_$___ARCLite__
+__ZL31OBJC_METACLASS_RO_$___ARCLite__
+__non_lazy_classes
+__ZL27OBJC_CLASS_RO_$___ARCLite__
+__ZL11_class_name
+__ZL32OBJC_$_CLASS_METHODS___ARCLite__
+__ZL17_load_method_name
+__ZL17_load_method_type
+l_OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
+__ZL30NSUndoManagerProxy_targetClass
+__ZL29original_NSManagedObject_init
+__ZL40original_NSManagedObject_allocWithEntity
+__ZL35original_NSManagedObject_allocBatch
+__ZL25NSMutableDictionary_class
+__ZL22NSConstantString_class
+__ZL14NSString_class
+__ZL36original_NSKKMS_fastIndexForKnownKey
+__ZL27original_NSKKMS_indexForKey
+__ZL28original_NSKKsD_objectForKey
+__ZL34original_NSKKsD_removeObjectForKey
+__ZL32original_NSKKsD_setObject_forKey
+__ZL40original_NSKKsD_addEntriesFromDictionary
+__ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZL31original_objc_allocateClassPair
+__ZL31original_object_getIndexedIvars
+__ZL22original_objc_getClass
+__ZL26original_objc_getMetaClass
+__ZL30original_objc_getRequiredClass
+__ZL25original_objc_lookUpClass
+__ZL25original_objc_getProtocol
+__ZL22original_class_getName
+__ZL25original_protocol_getName
+__ZL36original_objc_copyClassNamesForImage
+__ZL12demangleLock
+__ZL9Demangled
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -fembed-bitcode -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~835/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~835/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~835/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~835/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~835/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~835/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~835/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~835/Symbols/BuiltProducts -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -fgnu-inline-asm -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~835/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~835/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-65/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~835/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.o -mlinker-version=274.1
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-65/source/arclite.mm
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-65
+fixStringForCoreData
+cxxConstruct
+arclite_uninitialized_function
+scanMangledField
+isdigit
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.Internal.sdk/usr/include/ctype.h
+__isctype
+demangledName
+copySwiftV1DemangledName
+copySwiftV1MangledName
+allocateMaybeSwift
+word_align
+isSwift
+initialize_imp
+transcribeProperties
+property_list_nth
+transcribeProtocols
+transcribeMethods
+data
+method_list_nth
+__arclite_objc_copyClassNamesForImage
+__arclite_protocol_getName
+__arclite_class_getName
+__arclite_objc_getProtocol
+__arclite_objc_lookUpClass
+__arclite_objc_getRequiredClass
+__arclite_objc_getMetaClass
+__arclite_objc_getClass
+__arclite_object_getIndexedIvars
+__arclite_objc_allocateClassPair
+metaclass
+__arclite_objc_readClassPair
+transcribeIvars
+ivar_list_nth
+max
+alignment
+ro
+fastFlags
+__arclite_NSKKsD_addEntriesFromDictionary
+__arclite_NSKKsD_setObject_forKey
+__arclite_NSKKsD_removeObjectForKey
+__arclite_NSKKsD_objectForKey
+__arclite_NSKKMS_indexForKey
+__arclite_NSKKMS_fastIndexForKnownKey
+__arclite_NSManagedObject_allocBatch
+__arclite_NSManagedObject_allocWithEntity
+__arclite_NSManagedObject_init
+replaceMethod
+__arclite_NSUndoManagerProxy_isKindOfClass
+add_image_hook_swiftV1
+patch_lazy_pointers
+patch_t<const char **(const char *, unsigned int *)>
+patch_t<const char *(Protocol *)>
+patch_t<const char *(Class)>
+patch_t<Protocol *(const char *)>
+patch_t<Class (const char *)>
+patch_t<void *(id)>
+patch_t<Class (Class, const char *, unsigned long)>
+patch_t<Class (Class, const objc_image_info *)>
+__arclite_NSMutableDictionary__setObject_forKeyedSubscript
+__ARCLite__load
+install_swiftV1
+install_dict_nil_value
+addOrReplaceMethod
+keyedGetter
