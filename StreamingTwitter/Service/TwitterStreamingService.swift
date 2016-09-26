@@ -10,12 +10,23 @@ import Foundation
 import SwifteriOS
 
 class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
+    
+    let serialQueue = DispatchQueue(label: "tweetsSerialQueue")
     var swifter : Swifter?
-    var tweets : [Tweet]?
+    
+    public var tweets : [Tweet] {
+        get {
+            var syncTweets : [Tweet]!
+            serialQueue.sync {
+                syncTweets = tweetsData
+            }
+            return syncTweets
+        }
+    }
+    private var tweetsData : [Tweet] = [Tweet]()
     
     static let maximumLastTweets : Int = 5
     
-    let concurrentQueue = DispatchQueue(label: "tweetArrayQueue", attributes: .concurrent)
     
     override init() {
         
@@ -31,8 +42,6 @@ class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
                                    oauthTokenSecret: STAccessTokenSecret)
         }
         
-        self.tweets = [Tweet]()
-        
         super.init()
     }
     
@@ -41,11 +50,13 @@ class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
         if let text = tweet.text {
             print("Result: \(text)")
         }
-        self.tweets?.append(tweet)
-
-        if let tweets = self.tweets, tweets.count > TwitterStreamingService.maximumLastTweets
-        {
-            self.tweets?.removeFirst()
+        
+        self.serialQueue.async {
+            self.tweetsData.append(tweet)
+            if self.tweetsData.count > TwitterStreamingService.maximumLastTweets
+            {
+                self.tweetsData.removeFirst()
+            }
         }
     }
     
@@ -53,9 +64,8 @@ class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
         _ = swifter?.postTweetFilters(track: ["london"],
             progress: { (result:JSON) in
                 
-                DispatchQueue.main.async {
-                    self.progressData(result: result)
-                }
+                self.progressData(result: result)
+                
                 progressHandler()
             }, stallWarningHandler: { (code, message, percentFull) in
                 print("postTweetFilte rs: stallWarningHandler \(code) \(message)")
@@ -65,10 +75,6 @@ class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
         );
     }
     
-    
-    func updateData( completionHandler: @escaping () -> Void ) {
-        completionHandler()
-    }
     func obtainData() -> AnyObject? {
         return self.tweets as? AnyObject
     }
