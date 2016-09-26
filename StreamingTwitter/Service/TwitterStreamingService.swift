@@ -9,27 +9,30 @@
 import Foundation
 import SwifteriOS
 
-let STComsumerKey = "PZKQADuP0jFQzrmiEMdUqztGB"
-let STComsumerSecret = "PiQkF0lGx3D4mT22QAe9U6AceVPSEGmcBPUyAKOXEosO7pOrsx"
-let STAccessToken = "779999595460001792-6IvC69Eug87J5boWpHLYQfoyaqGutaj"
-let STAccessTokenSecret = "F5JZUnXqqcHDF4X0GXAxWeCGzsPcjIeLu84ZYFG7owlKz"
-
 class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
     var swifter : Swifter?
     var tweets : [Tweet]?
     
     static let maximumLastTweets : Int = 5
-
     
     let concurrentQueue = DispatchQueue(label: "tweetArrayQueue", attributes: .concurrent)
     
     override init() {
-        self.swifter = Swifter(consumerKey: STComsumerKey,
-                              consumerSecret: STComsumerSecret,
-                              oauthToken: STAccessToken,
-                              oauthTokenSecret: STAccessTokenSecret)
+        
+        if let plistTwitter = PListFile(plistFileNameInBundle: "Info")?.plist?["Twitter"],
+            let STConsumerKey = plistTwitter["Consumer Key"].string,
+            let STConsumerSecret = plistTwitter["Consumer Secret"].string,
+            let STAccessToken = plistTwitter["Access Token"].string,
+            let STAccessTokenSecret = plistTwitter["Access Token Secret"].string
+        {
+            self.swifter = Swifter(consumerKey: STConsumerKey,
+                                   consumerSecret: STConsumerSecret,
+                                   oauthToken: STAccessToken,
+                                   oauthTokenSecret: STAccessTokenSecret)
+        }
         
         self.tweets = [Tweet]()
+        
         super.init()
     }
     
@@ -38,22 +41,21 @@ class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
         if let text = tweet.text {
             print("Result: \(text)")
         }
-        
-        DispatchQueue.main.async {
-            self.tweets?.append(tweet)
-            
-            if let tweets = self.tweets, tweets.count > TwitterStreamingService.maximumLastTweets
-            {
-                self.tweets?.removeFirst()
-            }
-            
+        self.tweets?.append(tweet)
+
+        if let tweets = self.tweets, tweets.count > TwitterStreamingService.maximumLastTweets
+        {
+            self.tweets?.removeFirst()
         }
     }
     
     func startStream( progressHandler: @escaping () -> Void, failure: (_ error: String) -> Void ) {
         _ = swifter?.postTweetFilters(track: ["london"],
             progress: { (result:JSON) in
-                self.progressData(result: result)
+                
+                DispatchQueue.main.async {
+                    self.progressData(result: result)
+                }
                 progressHandler()
             }, stallWarningHandler: { (code, message, percentFull) in
                 print("postTweetFilte rs: stallWarningHandler \(code) \(message)")
@@ -68,7 +70,6 @@ class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
         completionHandler()
     }
     func obtainData() -> AnyObject? {
-        
         return self.tweets as? AnyObject
     }
 }
