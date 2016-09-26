@@ -10,16 +10,20 @@ import UIKit
 import SwifteriOS
 
 class STMainScreenViewController: UIViewController, STMainScreenDelegate {
+    // MARK: Injected by Storyboards
     @IBOutlet weak var tableView: UITableView!
     
+    // MARK: Injected by Typhoon
     var tableViewDDM : STMainScreenDDM?
-    var service : TwitterStreamingService?
+    var service : ServiceStreamingProtocol?
+    
+    // MARK: Custom Views of ViewController
     var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
     
     // MARK: - STMainScreenDelegate methods
     func selectedTweet(tweet: Tweet) {
         if let text = tweet.text {
-            self.presentAlertMessageVC(title: "Tweet message", message: text, settingsButton: false, buttonTitle: "OK", buttonAction: Selector(""))
+            self.presentAlertMessageVC(title: "Tweet message", message: text, settingsButton: false, buttonTitle: "OK", buttonAction: "")
         }
     }
 
@@ -31,11 +35,7 @@ class STMainScreenViewController: UIViewController, STMainScreenDelegate {
         super.viewDidLoad()
         
         tableView.backgroundView = activityIndicator
-        activityIndicator.transform = CGAffineTransform(scaleX: 2.0, y: 2.0);
         activityIndicator.startAnimating()
-    
-        service = TwitterStreamingService()
-        tableViewDDM = STMainScreenDDM(delegate: self, dataSource: service)
         
         tableView.delegate = tableViewDDM
         tableView.dataSource = tableViewDDM
@@ -53,7 +53,7 @@ class STMainScreenViewController: UIViewController, STMainScreenDelegate {
             }
         }, failure: { (error) in
             DispatchQueue.main.async {
-                self.presentAlertMessageVC(title: "Failure request to StreamingAPI", message: error, settingsButton: true, buttonTitle: "OK", buttonAction: Selector(""))
+                self.presentAlertMessageVC(title: "Failure request to StreamingAPI", message: error, settingsButton: false, buttonTitle: "OK", buttonAction: "")
             }
         })
         

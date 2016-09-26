@@ -8,11 +8,16 @@
 
 import Foundation
 
-@objc class Tweet : NSObject {
+@objc class Tweet : NSObject, Copying {
     let text : String?
     
     init(text: String?) {
         self.text = text
+        super.init()
+    }
+    
+    required init(original: Tweet) {
+        self.text = original.text
         super.init()
     }
 }

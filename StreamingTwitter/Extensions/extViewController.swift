@@ -14,12 +14,14 @@ let CGAlertMessageButtonCheckConnectionName = "Settings"
 
 extension UIViewController {
     
-    func presentAlertMessageVC( title: String, message: String, settingsButton: Bool = false, buttonTitle: String, buttonAction: Selector) {
+    func presentAlertMessageVC( title: String, message: String, settingsButton: Bool, buttonTitle: String, buttonAction: Selector) {
         let alert = UIAlertController(title: title,
                                       message: message,
                                       preferredStyle: UIAlertControllerStyle.alert)
-        let tapGesture = UITapGestureRecognizer(target: self, action: buttonAction)
-        alert.view.addGestureRecognizer(tapGesture)
+        if buttonAction.description != "" {
+            let tapGesture = UITapGestureRecognizer(target: self, action: buttonAction)
+            alert.view.addGestureRecognizer(tapGesture)
+        }
         alert.addAction( UIAlertAction(title: buttonTitle, style: .default, handler: { (action) in
             alert.dismiss(animated: true, completion: nil)
         }))
@@ -28,7 +30,6 @@ extension UIViewController {
                 UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!)
             }))
         }
-        self.present(alert, animated: true, completion: {
-        })
+        self.present(alert, animated: true, completion: nil)
     }
 }

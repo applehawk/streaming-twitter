@@ -26,8 +26,11 @@
 		7EFAAC481D97F35800444764 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECAB9B71D97DC9600339F51 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7EFAAC4C1D9805D100444764 /* extViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFAAC4B1D9805D100444764 /* extViewController.swift */; };
 		7EFAAC4E1D9817B800444764 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFAAC4D1D9817B800444764 /* MainAssembly.swift */; };
-		7EFAAC501D98A14400444764 /* PList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFAAC4F1D98A14400444764 /* PList.swift */; };
-		7EFAAC521D98A93800444764 /* PListFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFAAC511D98A93800444764 /* PListFile.swift */; };
+		7EFAAC561D98B13100444764 /* PList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFAAC541D98B13100444764 /* PList.swift */; };
+		7EFAAC571D98B13100444764 /* PListFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFAAC551D98B13100444764 /* PListFile.swift */; };
+		7EFAAC591D98B31100444764 /* ThreadSafeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFAAC581D98B31100444764 /* ThreadSafeArray.swift */; };
+		7EFAAC5B1D98B88A00444764 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EFAAC5A1D98B88A00444764 /* Configuration.plist */; };
+		7EFAAC5D1D98BA2A00444764 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFAAC5C1D98BA2A00444764 /* Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,8 +68,11 @@
 		7EFAAC3C1D97F34000444764 /* Typhoon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Typhoon.framework; path = Carthage/Build/iOS/Typhoon.framework; sourceTree = "<group>"; };
 		7EFAAC4B1D9805D100444764 /* extViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = extViewController.swift; path = Extensions/extViewController.swift; sourceTree = "<group>"; };
 		7EFAAC4D1D9817B800444764 /* MainAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainAssembly.swift; path = Assembly/MainAssembly.swift; sourceTree = "<group>"; };
-		7EFAAC4F1D98A14400444764 /* PList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PList.swift; path = Service/PList.swift; sourceTree = "<group>"; };
-		7EFAAC511D98A93800444764 /* PListFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PListFile.swift; path = Service/PListFile.swift; sourceTree = "<group>"; };
+		7EFAAC541D98B13100444764 /* PList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PList.swift; path = Helper/PList.swift; sourceTree = "<group>"; };
+		7EFAAC551D98B13100444764 /* PListFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PListFile.swift; path = Helper/PListFile.swift; sourceTree = "<group>"; };
+		7EFAAC581D98B31100444764 /* ThreadSafeArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThreadSafeArray.swift; path = Helper/ThreadSafeArray.swift; sourceTree = "<group>"; };
+		7EFAAC5A1D98B88A00444764 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Configuration.plist; path = Assembly/Configuration.plist; sourceTree = "<group>"; };
+		7EFAAC5C1D98BA2A00444764 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Extensions/Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +109,8 @@
 		7ECAB9A31D97DB5800339F51 /* StreamingTwitter */ = {
 			isa = PBXGroup;
 			children = (
-				7EFAAC4A1D9805B800444764 /* Extensions */,
+				7EFAAC531D98B10100444764 /* Helper */,
+				7EFAAC4A1D9805B800444764 /* Extension */,
 				7EFAAC3A1D97F2B400444764 /* Model */,
 				7EFAAC331D97ED3E00444764 /* Service */,
 				7ECABA0A1D97E23C00339F51 /* AppDelegate.swift */,
@@ -167,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				7EFAAC4D1D9817B800444764 /* MainAssembly.swift */,
+				7EFAAC5A1D98B88A00444764 /* Configuration.plist */,
 			);
 			name = Assembly;
 			sourceTree = "<group>";
@@ -176,8 +184,6 @@
 			children = (
 				7EFAAC341D97ED5100444764 /* TwitterStreamingService.swift */,
 				7EFAAC361D97ED9500444764 /* ServiceStreamingProtocol.swift */,
-				7EFAAC4F1D98A14400444764 /* PList.swift */,
-				7EFAAC511D98A93800444764 /* PListFile.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -190,12 +196,23 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		7EFAAC4A1D9805B800444764 /* Extensions */ = {
+		7EFAAC4A1D9805B800444764 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				7EFAAC4B1D9805D100444764 /* extViewController.swift */,
+				7EFAAC5C1D98BA2A00444764 /* Array.swift */,
 			);
-			name = Extensions;
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		7EFAAC531D98B10100444764 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7EFAAC541D98B13100444764 /* PList.swift */,
+				7EFAAC551D98B13100444764 /* PListFile.swift */,
+				7EFAAC581D98B31100444764 /* ThreadSafeArray.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ECAB9CC1D97DDD800339F51 /* Main.storyboard in Resources */,
+				7EFAAC5B1D98B88A00444764 /* Configuration.plist in Resources */,
 				7ECAB9CD1D97DDD800339F51 /* Assets.xcassets in Resources */,
 				7ECAB9CB1D97DDD800339F51 /* LaunchScreen.storyboard in Resources */,
 				7EFAAC2F1D97E45800444764 /* STTweetCell.xib in Resources */,
@@ -272,16 +290,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EFAAC501D98A14400444764 /* PList.swift in Sources */,
 				7ECAB9BC1D97DD2D00339F51 /* STMainScreenDDM.swift in Sources */,
 				7EFAAC4E1D9817B800444764 /* MainAssembly.swift in Sources */,
 				7ECAB9C01D97DD3400339F51 /* STTweetCell.swift in Sources */,
 				7EFAAC4C1D9805D100444764 /* extViewController.swift in Sources */,
 				7ECABA0B1D97E23C00339F51 /* AppDelegate.swift in Sources */,
 				7EFAAC371D97ED9500444764 /* ServiceStreamingProtocol.swift in Sources */,
+				7EFAAC571D98B13100444764 /* PListFile.swift in Sources */,
 				7EFAAC351D97ED5100444764 /* TwitterStreamingService.swift in Sources */,
-				7EFAAC521D98A93800444764 /* PListFile.swift in Sources */,
 				7EFAAC391D97F2AF00444764 /* Tweet.swift in Sources */,
+				7EFAAC5D1D98BA2A00444764 /* Array.swift in Sources */,
+				7EFAAC561D98B13100444764 /* PList.swift in Sources */,
+				7EFAAC591D98B31100444764 /* ThreadSafeArray.swift in Sources */,
 				7ECAB9C31D97DD8A00339F51 /* STMainScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

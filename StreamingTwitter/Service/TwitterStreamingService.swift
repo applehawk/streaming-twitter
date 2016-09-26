@@ -14,19 +14,21 @@ class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
     let serialQueue = DispatchQueue(label: "tweetsSerialQueue")
     var swifter : Swifter?
     
-    public var tweets : [Tweet] {
+    public var tweets : [Tweet]? {
         get {
-            var syncTweets : [Tweet]!
+            var syncTweets : [Tweet]?
             serialQueue.sync {
-                syncTweets = tweetsData
+                if tweetsData.count == 0 {
+                    syncTweets = nil
+                } else {
+                    syncTweets = tweetsData.clone()
+                }
             }
             return syncTweets
         }
     }
     private var tweetsData : [Tweet] = [Tweet]()
-    
     static let maximumLastTweets : Int = 5
-    
     
     override init() {
         
@@ -76,6 +78,6 @@ class TwitterStreamingService: NSObject, ServiceStreamingProtocol {
     }
     
     func obtainData() -> AnyObject? {
-        return self.tweets as? AnyObject
+        return self.tweets as AnyObject?
     }
 }
